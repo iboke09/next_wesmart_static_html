@@ -53,7 +53,7 @@ const Main = () => {
           ))} */}
         </motion.p>
         <Link
-          className="pro-btn animate__animated animate__zoomInLeft"
+          className="pro-btn "
           href="/contact"
         >
           <span style={{ zIndex: "1000", fontWeight: "normal" }}>
@@ -61,7 +61,7 @@ const Main = () => {
           </span>
         </Link>
         <Link
-          className="bad-btn animate__animated animate__zoomInRight"
+          className="bad-btn "
           href="#sap"
           style={{ fontWeight: "normal" }}
         >
