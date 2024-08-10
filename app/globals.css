@@ -2802,3 +2802,124 @@ footer {
 .ContactForm_contactFormContainer__g_Sy1 {
   background-color: #edf4ff !important;
 }
+
+
+/* About component */
+
+
+.all-about {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  display: grid;
+  place-items: center;
+}
+
+.all-about .box {
+  text-align: center;
+  background-color: #00152e;
+  color: white;
+  width: 320px;
+  padding: 97px 56px 277px;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.eight {
+  color: #00152e;
+  font-size: 73px;
+  position: absolute;
+  margin-top: 20px;
+  margin-right: 21px;
+  left: 201px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  z-index: 0;
+}
+.eight::before {
+  content: "ERP";
+  position: absolute;
+  margin-top: 96px;
+  color: #ffffffb2;
+  margin-left: -7px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.all-about .box::before,
+.all-about .box:after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #26d5ff;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+.all-about .box:nth-child(1)::before {
+  right: -175px;
+  top: -183px;
+}
+.all-about .box:nth-child(1)::after {
+  left: -175px;
+  bottom: -183px;
+}
+.all-about .box:nth-child(2)::before {
+  right: 65px;
+  top: -215px;
+}
+.all-about .box:nth-child(2)::after {
+  right: 65px;
+  bottom: -215px;
+}
+.all-about .box:nth-child(3)::before {
+  left: -175px;
+  top: -183px;
+}
+.all-about .box:nth-child(3)::after {
+  right: -175px;
+  bottom: -183px;
+}
+.all-about .box h1 span:first-child {
+  z-index: 2;
+  position: relative;
+}
+
+.all-about .box p {
+  font-size: 19px;
+  padding: 23px;
+  color: #ffffffcc;
+  line-height: 35px;
+  font-weight: 400;
+}
+
+.all-about .box h1 {
+  font-size: 71.62px;
+  padding-bottom: 93px;
+}
+
+.image-darta {
+  width: 538px;
+  background: #00152e;
+  border-radius: 0px 114px 114px 0px;
+  left: -8px;
+  position: relative;
+  padding: 30px;
+  text-align: right;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+.image-darta img{
+    padding-right: 40px;
+}
+.image-darta::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #26d5ff;
+    border-radius: 50%;
+    filter: blur(100px);
+    left: -263px;
+    top: -143px;
+
+}

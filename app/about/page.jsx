@@ -5,6 +5,7 @@ import img1 from "../img/Man thinking-bro.svg";
 import img2 from "../img/SvgVector 1PNG.png";
 import Footer from "../_component/Footer/Footer";
 import Landing from "../_component/Landing/Landing";
+import AboutSection from "../_component/AboutSection/AboutSection";
 
 const About = () => {
   return (
@@ -121,6 +122,7 @@ const About = () => {
           </div>
         </div>
       </div> */}
+      <AboutSection/>
       <Footer />
     </>
   );
