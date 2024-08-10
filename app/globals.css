@@ -2806,19 +2806,10 @@ footer {
 
 /* About component */
 
-
-.all-about {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2rem;
-  display: grid;
-  place-items: center;
-}
-
 .all-about .box {
   text-align: center;
   background-color: #00152e;
   color: white;
-  width: 320px;
   padding: 97px 56px 277px;
   position: relative;
   border-radius: 24px;
@@ -2828,9 +2819,8 @@ footer {
   color: #00152e;
   font-size: 73px;
   position: absolute;
-  margin-top: 20px;
-  margin-right: 21px;
-  left: 201px;
+  margin-top: -20px;
+  left: 152px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   z-index: 0;
@@ -2838,7 +2828,7 @@ footer {
 .eight::before {
   content: "ERP";
   position: absolute;
-  margin-top: 96px;
+  margin-top: 73px;
   color: #ffffffb2;
   margin-left: -7px;
   font-size: 30px;
@@ -2886,7 +2876,7 @@ footer {
 
 .all-about .box p {
   font-size: 19px;
-  padding: 23px;
+  /* padding: 23px; */
   color: #ffffffcc;
   line-height: 35px;
   font-weight: 400;

@@ -22,7 +22,6 @@ const Contact = () => {
   };
   const handleSubmit = async (e) => {
     // e.preventDefault();
-    // هنا يمكنك إضافة كود لإرسال البيانات إلى خادمك أو خدمة خارجية
     console.log("Form data submitted:", formData);
   };
 
