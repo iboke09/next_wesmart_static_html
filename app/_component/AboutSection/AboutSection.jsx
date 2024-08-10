@@ -3,8 +3,8 @@ import image from '../../img/Light_Logo.svg'
 export default function AboutSection() {
     return (
         <>
-        <div classname="image-darta">
-        <Image width={100} height={100} src={image} alt=""/>
+        <div className="image-darta" style={{textAlign:'right'}}>
+        <Image width={400} height={100} src={image} alt=""/>
     </div>
     <div className="all-about">
       <div className="box">
