@@ -13,7 +13,7 @@ const Main = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.05,
+        staggerChildren: 0.02,
       },
     },
   };
@@ -41,19 +41,18 @@ const Main = () => {
         <motion.h2 className="first1">with our expert services</motion.h2>
         <motion.p
           className="no"
-          // variants={pVariants}
-          // initial="hidden"
-          // animate="visible"
+          variants={pVariants}
+          initial="hidden"
+          animate="visible"
         >
-          {text}
-          {/* {text.split("").map((char, index) => (
+          {text.split("").map((char, index) => (
             <motion.span key={index} variants={spanVariants}>
               {char}
             </motion.span>
-          ))} */}
+          ))}
         </motion.p>
         <Link
-          className="pro-btn "
+          className="pro-btn animate__animated animate__zoomInLeft"
           href="/contact"
         >
           <span style={{ zIndex: "1000", fontWeight: "normal" }}>
@@ -61,7 +60,7 @@ const Main = () => {
           </span>
         </Link>
         <Link
-          className="bad-btn "
+          className="bad-btn animate__animated animate__zoomInRight"
           href="#sap"
           style={{ fontWeight: "normal" }}
         >
