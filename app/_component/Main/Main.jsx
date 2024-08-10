@@ -13,7 +13,7 @@ const Main = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.01,
+        staggerChildren: 0.05,
       },
     },
   };
@@ -41,15 +41,16 @@ const Main = () => {
         <motion.h2 className="first1">with our expert services</motion.h2>
         <motion.p
           className="no"
-          variants={pVariants}
-          initial="hidden"
-          animate="visible"
+          // variants={pVariants}
+          // initial="hidden"
+          // animate="visible"
         >
-          {text.split("").map((char, index) => (
+          {text}
+          {/* {text.split("").map((char, index) => (
             <motion.span key={index} variants={spanVariants}>
               {char}
             </motion.span>
-          ))}
+          ))} */}
         </motion.p>
         <Link
           className="pro-btn animate__animated animate__zoomInLeft"
