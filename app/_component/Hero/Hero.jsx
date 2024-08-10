@@ -19,7 +19,7 @@ const Hero = () => {
     <>
       <div className="our">
         <div className="tutan main-title">
-          <h2>Our Major Services</h2>
+          <h2>Our Legends</h2>
         </div>
         <div className="container">
           <Tilt className={styles.hal}>

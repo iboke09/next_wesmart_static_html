@@ -39,7 +39,7 @@ const Spliden = () => {
             height: "100vh",
           }}
         >
-          <h1>Our Services</h1>
+          <h1>Our Experience</h1>
           <div className="cards" style={{zIndex:'40'}}>
             <Splide 
               aria-label="Testimonials"
