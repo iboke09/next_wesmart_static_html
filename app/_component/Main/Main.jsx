@@ -39,20 +39,13 @@ const Main = () => {
       >
         <p className="first">Boost Business</p>
         <motion.h2 className="first1">with our expert services</motion.h2>
-        <motion.p
+        <p
           className="no"
-          variants={pVariants}
-          initial="hidden"
-          animate="visible"
         >
-          {text.split("").map((char, index) => (
-            <motion.span key={index} variants={spanVariants}>
-              {char}
-            </motion.span>
-          ))}
-        </motion.p>
+          {text}
+        </p>
         <Link
-          className="pro-btn animate__animated animate__zoomInLeft"
+          className="pro-btn"
           href="/contact"
         >
           <span style={{ zIndex: "1000", fontWeight: "normal" }}>
@@ -60,7 +53,7 @@ const Main = () => {
           </span>
         </Link>
         <Link
-          className="bad-btn animate__animated animate__zoomInRight"
+          className="bad-btn "
           href="#sap"
           style={{ fontWeight: "normal" }}
         >
