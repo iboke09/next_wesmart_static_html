@@ -1,24 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import image from "../../img/FrameHero.svg";
 import Link from "next/link";
 import Image from "next/image";
 
 const Main = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // يعتبر أي عرض شاشة أقل من أو يساوي 768 بكسل كجهاز محمول
-    };
-
-    handleResize(); // تعيين الحالة عند التحميل الأولي
-    window.addEventListener("resize", handleResize); // الاستماع لتغير حجم الشاشة
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   const text =
     "Unlock your potential with our expert SAP solutions.Streamline operations and boost efficiency. Enhance your growth with exceptional web design and engaging graphics designs.";
   const pVariants = {
@@ -52,25 +39,18 @@ const Main = () => {
       >
         <p className="first">Boost Business</p>
         <motion.h2 className="first1">with our expert services</motion.h2>
-        {!isMobile ? (
-          <motion.p
-            className="no"
-            variants={pVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            {text.split("").map((char, index) => (
-              <motion.span key={index} variants={spanVariants}>
-                {char}
-              </motion.span>
-            ))}
-          </motion.p>
-        ) : (
-          <p className="no">
-            <span>{text}</span>
-          </p>
-        )}
-
+        <motion.p
+          className="no"
+          variants={pVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          {text.split("").map((char, index) => (
+            <motion.span key={index} variants={spanVariants}>
+              {char}
+            </motion.span>
+          ))}
+        </motion.p>
         <Link
           className="pro-btn animate__animated animate__zoomInLeft"
           href="/contact"
