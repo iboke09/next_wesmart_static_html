@@ -28,6 +28,7 @@ const Spliden = () => {
           alignItems: "center",
           height: "85vh",
           marginTop: "100px",
+          marginBottom:"70px"
         }}
       >
         <div
