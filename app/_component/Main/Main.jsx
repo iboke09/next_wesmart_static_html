@@ -55,7 +55,7 @@ const Main = () => {
           className="pro-btn animate__animated animate__zoomInLeft"
           href="/contact"
         >
-          <span style={{ zIndex: "1000", fontWeight: "normal" }}>
+          <span style={{ zIndex: "1000", fontWeight: "normal",width:'100%' }}>
             contact us
           </span>
         </Link>

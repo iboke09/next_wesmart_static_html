@@ -602,8 +602,9 @@ input:checked + .slider:before {
 
   .landing .text a {
     font-size: 14px;
-    line-height: 25px;
-    padding: 0 39px;
+    line-height: 30px;
+    white-space: nowrap;
+    padding: 0 42px;
     margin: 10px;
     width: 175px;
   }
