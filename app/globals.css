@@ -17,7 +17,7 @@
   --blawhs-color: white;
   --blawho-color: black;
   --blawhsUI-color: #00000052;
-  --shadow-color: #26d5ff;
+  --shadow-color: #00cdff;
   --gray-color: #726a6e;
   --agib-color: black;
   --agib2-color: #00cdff;
@@ -662,6 +662,7 @@ input:checked + .slider:before {
   box-shadow: 0 0 10px #ddd;
   transform-style: preserve-3d !important;
   border-radius: 6px;
+  height: 335px;
 }
 
 .our .box::before {
@@ -704,7 +705,7 @@ input:checked + .slider:before {
 }
 
 .our .box h2 {
-  font-size: 22px;
+  font-size: 19.9px;
   color: black;
   margin-bottom: 10px;
   margin-top: -5px;

@@ -1,101 +1,47 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const DarkMode = () => {
-  let darkMode = false;
-  let value = "darko";
-  if (typeof window !== "undefined") {
-    let toggleBtn = document.querySelector("#toggle");
-    let bodyEl = document.querySelector("body");
-    if (localStorage.getItem("dali")) {
-      // toggleBtn.removeAttribute("defaultChecked")
-      toggleBtn?.removeAttribute("checked");
-      bodyEl.classList.add(localStorage.getItem("dali"));
-    } else {
-      toggleBtn?.setAttribute("defaultChecked", "defaultChecked");
-    }
-  }
-  let defaultChecked = "defaultChecked";
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
-  let lp = 0;
-
-  if (typeof window !== "undefined") {
-    if (localStorage.getItem("dali")) {
-      lp = 1;
-      if (document.readyState !== "loading") {
-        document.getElementById("toggle")?.removeAttribute("checked");
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedTheme = localStorage.getItem("dali");
+      if (storedTheme) {
+        setIsDarkMode(false);
+        document.body.classList.add(storedTheme);
+      } else {
+        setIsDarkMode(true);
       }
-    } else {
-      const input = document.querySelector("input");
-      if (document.readyState !== "loading") {
-        input?.setAttribute("checked", "checked");
-      }
-      input?.setAttribute(defaultChecked, "defaultChecked");
     }
-  }
+  }, []);
+
+  const handleToggle = () => {
+    const newDarkMode = !isDarkMode;
+    setIsDarkMode(newDarkMode);
+
+    if (newDarkMode) {
+      document.body.classList.remove("darko");
+      localStorage.removeItem("dali");
+    } else {
+      localStorage.setItem("dali", "darko");
+      document.body.classList.add("darko");
+    }
+  };
+
   return (
     <div className="maskdark">
       <label id="theme-toggle-button">
-        {lp == 1 ? (
-          <input
-            type="checkbox"
-            id="toggle"
-            aria-labelledby="theme-toggle-button"
-            onChange={() => {
-              let toggleBtn = document.querySelector("#toggle");
-              let bodyEl = document.querySelector("body");
-              if (localStorage.getItem("dali")) {
-                // toggleBtn.removeAttribute("defaultChecked")
-                toggleBtn.removeAttribute("checked");
-                bodyEl.classList.add(localStorage.getItem("dali"));
-              } else {
-                toggleBtn.setAttribute("defaultChecked", "defaultChecked");
-              }
-              if (typeof window !== "undefined") {
-                darkMode = event.target.checked;
-                if (darkMode) {
-                  bodyEl.classList.remove("darko");
-                  localStorage.removeItem("dali", value);
-                } else {
-                  // toggleBtn.removeAttribute("deafultChecked")
-                  localStorage.setItem("dali", value);
-                  bodyEl.classList.add(localStorage.getItem("dali"));
-                }
-              }
-            }}
-          />
-        ) : (
-          <input
-          defaultChecked
+        <input
           type="checkbox"
           id="toggle"
           aria-labelledby="theme-toggle-button"
-            onChange={() => {
-              let toggleBtn = document.querySelector("#toggle");
-              let bodyEl = document.querySelector("body");
-              if (localStorage.getItem("dali")) {
-                toggleBtn.removeAttribute("checked");
-                bodyEl.classList.add(localStorage.getItem("dali"));
-              } else {
-                toggleBtn.setAttribute("defaultChecked", "defaultChecked");
-              }
-              if (typeof window !== "undefined") {
-                darkMode = event.target.checked;
-                if (darkMode) {
-                  bodyEl.classList.remove("darko");
-                  localStorage.removeItem("dali", value);
-                } else {
-                  // toggleBtn.removeAttribute("deafultChecked")
-                  localStorage.setItem("dali", value);
-                  bodyEl.classList.add(localStorage.getItem("dali"));
-                }
-              }
-            }}
-          />
-        )}
+          checked={isDarkMode}
+          onChange={handleToggle}
+        />
         <span className="slider"></span>
       </label>
     </div>
   );
-}
+};
 
 export default DarkMode;
