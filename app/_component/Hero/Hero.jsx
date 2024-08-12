@@ -17,7 +17,7 @@ import "animate.css";
 const Hero = () => {
   return (
     <>
-      <div className="our" load="eager">
+      <div className="our">
         <div className="tutan main-title">
           <h2>Our Legends</h2>
         </div>

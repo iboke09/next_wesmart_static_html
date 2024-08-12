@@ -30,6 +30,15 @@
   --box-shadow-color: #1cb3ff;
 }
 
+/* --hidden-img:block;
+--hidden-img2:none;
+--visibility-img:visible;
+--visibility-img2:hidden */
+/* --hidden-img:none;
+--hidden-img2:block;
+--visibility-img:hidden;
+--visibility-img2:visible; */
+
 .darko {
   transition: 0.7s;
   --box-shadow-color: #1cb3ff80;
@@ -2128,7 +2137,7 @@ footer {
   font-weight: bold;
   border-radius: 8px;
   width: 161px;
-  box-shadow: var(--box-shadow-color)  0px 0px 10px;
+  box-shadow: var(--box-shadow-color) 0px 0px 10px;
   transition: 0.7s;
 }
 
@@ -2142,7 +2151,11 @@ footer {
   left: -40px;
   -webkit-text-fill-color: transparent;
   font-family: "Poppins", sans-serif;
-  background-image: linear-gradient(22deg, rgb(86 194 234) 0%, rgb(0 34 123) 100%);
+  background-image: linear-gradient(
+    22deg,
+    rgb(86 194 234) 0%,
+    rgb(0 34 123) 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2859,7 +2872,7 @@ footer {
   bottom: -183px;
 }
 .all-about .box:nth-child(2)::before {
-  right: 65px;
+  right: 18px;
   top: -215px;
 }
 .all-about .box:nth-child(2)::after {
@@ -2944,6 +2957,10 @@ footer {
   .all-about .box {
     padding: 97px 28px 165px;
   }
+  .all-about .box:nth-child(2)::before,
+  .all-about .box:nth-child(2)::after {
+    right: 215px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2963,10 +2980,22 @@ footer {
   .image-darta {
     width: fit-content;
   }
-  .main-title h2{
+  .main-title h2 {
     font-size: 30px;
   }
-  .containerS h1{
+  .containerS h1 {
     font-size: 30px !important;
   }
+  .all-about .box:nth-child(2)::before,
+  .all-about .box:nth-child(2)::after {
+    right: 155px;
+  }
+  .lanoMask{
+    margin-bottom: 100px;
+  }
+}
+
+
+.landing .text h2.animate {
+  will-change: animation, background-color,background-position;
 }

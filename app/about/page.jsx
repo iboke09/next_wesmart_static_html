@@ -10,44 +10,46 @@ import AboutSection from "../_component/AboutSection/AboutSection";
 const About = () => {
   return (
     <>
-      <Landing>
-        <div
-          className="textA container"
-          // style={{ flexDirection: "row-reverse" }}
-        >
+      <div className="lanoMask">
+        <Landing>
           <div
-            className="centere"
-            style={{ textAlign: "left", top: "65px", position: "relative" }}
+            className="textA container"
+            // style={{ flexDirection: "row-reverse" }}
           >
-            <h2>About Our Company</h2>
-            <p style={{ color: "var(--blawh-color)", width: "500px" }}>
-              WeSmart specializes in website design, development, and all types
-              of design, including UI/UX. Additionally, we have outstanding
-              expertise in SAP, delivering industry-leading solutions and
-              optimizations.
-            </p>
-            <a
-              href="#"
-              className="rulla mt-8 inline-block rounded  px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring "
+            <div
+              className="centere"
+              style={{ textAlign: "left", top: "65px", position: "relative" }}
             >
-              <span style={{ position: "relative", zIndex: "10" }}>
-                Start Your Project
-              </span>
-            </a>
-          </div>
+              <h2>About Our Company</h2>
+              <p style={{ color: "var(--blawh-color)", width: "500px" }}>
+                WeSmart specializes in website design, development, and all
+                types of design, including UI/UX. Additionally, we have
+                outstanding expertise in SAP, delivering industry-leading
+                solutions and optimizations.
+              </p>
+              <a
+                href="#"
+                className="rulla mt-8 inline-block rounded  px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring "
+              >
+                <span style={{ position: "relative", zIndex: "10" }}>
+                  Start Your Project
+                </span>
+              </a>
+            </div>
 
-          <div className="tawsitS" style={{ top: "-70px" }}>
-            <Image
-              quality={100}
-              src={img2}
-              alt="alt"
-              width={450}
-              height={200}
-              loading="eager"
-            />
+            <div className="tawsitS" style={{ top: "-70px" }}>
+              <Image
+                quality={100}
+                src={img2}
+                alt="alt"
+                width={450}
+                height={200}
+                loading="eager"
+              />
+            </div>
           </div>
-        </div>
-      </Landing>
+        </Landing>
+      </div>
       {/* <div className="kura">
         <div
           style={{ height: "70vh", top: "100px", position: "relative" }}
@@ -122,7 +124,7 @@ const About = () => {
           </div>
         </div>
       </div> */}
-      <AboutSection/>
+      <AboutSection />
       <Footer />
     </>
   );

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import image from "../../img/FrameHero.svg";
+import image from "../../img/Frame.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -55,7 +55,7 @@ const Main = () => {
           className="pro-btn animate__animated animate__zoomInLeft"
           href="/contact"
         >
-          <span style={{ zIndex: "1000", fontWeight: "normal",width:'100%' }}>
+          <span style={{ zIndex: "1000", fontWeight: "normal", width: "100%" }}>
             contact us
           </span>
         </Link>
@@ -63,21 +63,18 @@ const Main = () => {
           className="bad-btn animate__animated animate__zoomInRight"
           href="#sap"
           style={{ fontWeight: "normal" }}
-        >
+        > 
           learn more
         </Link>
       </div>
       <div className="tawsit">
-        <Image src={image} alt="alt" width={450} height={200} loading="eager" />
-        {/* <div class="pyramid-loader">
-          <div class="wrapper">
-            <span class="side side1"></span>
-            <span class="side side2"></span>
-            <span class="side side3"></span>
-            <span class="side side4"></span>
-            <span class="shadow"></span>
-          </div>
-        </div> */}
+        <Image
+          src={image}
+          alt="alt"
+          width={450}
+          height={200}
+          loading="eager"
+        />
       </div>
     </div>
   );
