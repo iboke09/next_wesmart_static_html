@@ -20,7 +20,6 @@ export const metadata = {
   title: {
     default: "Wesmart For Technology",
     template: "%s - Wesmart For Technology",
-    
   },
   description:
     "We offer innovative SAP solutions, top-notch website and store designs with the fastest performance, and exceptional UI/UX services for user experience.",

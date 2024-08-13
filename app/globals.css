@@ -17,7 +17,7 @@
   --blawhs-color: white;
   --blawho-color: black;
   --blawhsUI-color: #00000052;
-  --shadow-color: #00cdff;
+  --shadow-color: #0098ff;
   --gray-color: #726a6e;
   --agib-color: black;
   --agib2-color: #00cdff;
@@ -27,7 +27,7 @@
   --padding-bottom: 110px;
   --border-F: 60px;
   --maskERP-color: rgb(0 21 46);
-  --box-shadow-color: #0b8aca 0px 0px 7px;
+  --box-shadow-color: #026db996 0px 2px 12px;
 }
 
 /* --hidden-img:block;
@@ -58,7 +58,7 @@
   --mask-color: rgb(6 17 31);
   --blawh-color: white;
   --blawho-color: #06111f;
-  --shadow-color: #00cdff;
+  --shadow-color: #0098ff;
   --agib-color: rgb(0, 21, 46);
   --gray-color: gray;
   --agib2-color: #00cdff;

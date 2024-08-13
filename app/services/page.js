@@ -24,8 +24,8 @@ export default function Services() {
               <h2>Our Services</h2>
               <p style={{ color: "var(--blawh-color)" }}>
                 We provide four services, all delivered with great skill,
-                professionalism,<br/> and expertise. acilisis tortor malesuada
-                malesuada.
+                professionalism,
+                <br /> and expertise. acilisis tortor malesuada malesuada.
               </p>
               <div
                 className="grid grid-cols-2 gap-6  top-20 relative gridS"
@@ -44,6 +44,7 @@ export default function Services() {
                 width={450}
                 height={200}
                 loading="eager"
+                quality={100}
               />
             </div>
           </div>
