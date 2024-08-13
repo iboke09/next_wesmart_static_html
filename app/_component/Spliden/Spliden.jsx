@@ -17,7 +17,6 @@ import "./index.scss";
 const Spliden = () => {
   return (
     <>
-      {/* <div className="spikes" style={{ position: "relative" }}></div> */}
       <div
         className="hait"
         style={{
@@ -28,7 +27,7 @@ const Spliden = () => {
           alignItems: "center",
           height: "85vh",
           marginTop: "100px",
-          marginBottom:"70px"
+          marginBottom: "70px",
         }}
       >
         <div
@@ -41,12 +40,11 @@ const Spliden = () => {
           }}
         >
           <h1>Our Experience</h1>
-          <div className="cards" style={{zIndex:'40'}}>
-            <Splide 
+          <div className="cards" style={{ zIndex: "40" }}>
+            <Splide
               aria-label="Testimonials"
               options={{
                 type: "loop",
-                // fixedWidth: "700px",
                 focus: "center",
                 isNavigation: true,
                 autoplay: true,
@@ -57,7 +55,7 @@ const Spliden = () => {
                 <SplideSlide key={item.id} style={{ width: "50vw" }}>
                   <div className="card">
                     {item.img}
-                    <h2 style={{textAlign:'center'}}>{item.name}</h2>
+                    <h2 style={{ textAlign: "center" }}>{item.name}</h2>
                     <p className="splideP">{item.text}</p>
                   </div>
                 </SplideSlide>
@@ -68,6 +66,6 @@ const Spliden = () => {
       </div>
     </>
   );
-}
+};
 
 export default Spliden;

@@ -27,7 +27,7 @@
   --padding-bottom: 110px;
   --border-F: 60px;
   --maskERP-color: rgb(0 21 46);
-  --box-shadow-color: #1cb3ff;
+  --box-shadow-color: #0b8aca 0px 0px 7px;
 }
 
 /* --hidden-img:block;
@@ -41,7 +41,7 @@
 
 .darko {
   transition: 0.7s;
-  --box-shadow-color: #1cb3ff80;
+  --box-shadow-color: #1cb3ff80 0px 0px 10px;
   --blawhsUI-color: #ffffffc8;
   --maskERP-color: white;
   --border-F: -40px;
@@ -2137,7 +2137,7 @@ footer {
   font-weight: bold;
   border-radius: 8px;
   width: 161px;
-  box-shadow: var(--box-shadow-color) 0px 0px 10px;
+  box-shadow: var(--box-shadow-color);
   transition: 0.7s;
 }
 
@@ -2384,6 +2384,9 @@ footer {
   font-size: 18px;
   transition: 0.3s;
   position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .ERPcontactBtn::after {
@@ -2502,6 +2505,9 @@ footer {
   font-size: 18px;
   transition: 0.5s;
   position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .UIcontactBtn::after {
