@@ -5,9 +5,6 @@ import logo from "../../img/TheFinalOfDesigns-02 (1).webp";
 import Link from "next/link";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
-import { motion } from "framer-motion";
-import image from "../../img/landingimg.png";
-import Main from "../Main/Main";
 import { usePathname } from "next/navigation";
 import DarkMode from "../DarkMode/DarkMode";
 function Navbar({ active }) {

@@ -7,7 +7,6 @@ import Image from "next/image";
 import { VscFoldRight, VscFoldUp, VscChevronRight } from "react-icons/vsc";
 import { AiOutlineClose } from "react-icons/ai";
 import DarkMode from "../DarkMode/DarkMode";
-import style from "./style.module.css";
 function ResponsiveMenu({ showMenu, toggleMenu }) {
   return (
     <>
