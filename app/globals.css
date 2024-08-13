@@ -78,6 +78,11 @@
 /* max-height: 100%;  */
 /* } */
 
+img{
+  user-select: none;
+  -webkit-user-drag: none; 
+  -moz-user-select: none; 
+}
 .agib2 {
   color: var(--agib2-color);
 }
