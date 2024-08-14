@@ -30,9 +30,10 @@ export const metadata = {
     description:
       "We offer innovative SAP solutions, top-notch website and store designs with the fastest performance, and exceptional UI/UX services for user experience.",
     url: "https://wesmartt.com",
+    locale: "en_US",
     images: [
       {
-        url: "./TheFinalOfDesigns-02.png",
+        url: "https://wesmartt/logo.png",
         alt: "Sap and all web development services",
       },
     ],
@@ -43,22 +44,33 @@ export const metadata = {
     title: "Wesmart For Technology",
     description:
       "We offer innovative SAP solutions, top-notch website and store designs with the fastest performance, and exceptional UI/UX services for user experience.",
-    image: "./TheFinalOfDesigns-02.png",
+    image: "https://wesmartt/logo.png",
   },
   additionalMetaTags: [
     {
       name: "keywords",
       content:
-        "Sap Consultant, SEO, Web Development,UI/UX design, All web services, sap , erp ,websites,graphic design,We offer innovative SAP solutions, top-notch website and store designs with the fastest performance, and exceptional UI/UX services for user experience.",
+        "Sap Consultant, SEO, Web Development,UI/UX design, All web services, erp ,websites,graphic design,We offer innovative SAP solutions, top-notch website and store designs with the fastest performance, and exceptional UI/UX services for user experience.",
+    },
+    {
+      name: "robots",
+      content: "index, follow",
+    },
+    {
+      name: "jsonld",
+      content: `{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Wesmart For Technology",
+        "url": "https://wesmartt.com",
+        "logo": "https://wesmartt.com/images/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/wesmartt",
+          "https://www.twitter.com/wesmartt"
+        ]
+      }`,
     },
   ],
-  // structuredData: {
-  //   '@context': 'https://schema.org',
-  //   '@type': 'Organization',
-  //   name: 'Wesmart For Technology',
-  //   url: 'https://wesmartt.com',
-  //   logo: 'https://www.mywebsite.com/logo.png',
-  // },
 };
 
 export default function RootLayout({ children }) {
