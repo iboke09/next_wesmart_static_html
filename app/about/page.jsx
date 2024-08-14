@@ -37,7 +37,7 @@ const About = () => {
               </a>
             </div>
 
-            <div className="tawsitS" style={{ top: "-70px" }}>
+            <div className="tawsitS A" style={{ top: "-70px" }}>
               <Image
                 quality={100}
                 src={img2}
