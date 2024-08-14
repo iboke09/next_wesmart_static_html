@@ -2943,6 +2943,7 @@ footer {
   filter: blur(100px);
   left: -263px;
   top: -143px;
+  z-index: -1;
 }
 
 @media (max-width: 1280px) {
