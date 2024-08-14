@@ -21,7 +21,7 @@ import { SiCodesignal } from "react-icons/si";
 const Skills = () => {
   return (
     <>
-      <div className="ski" id="sap">
+      <div className="ski B" id="sap">
         <div className="container">
           <div className="animatio" id="sap">
             <motion.div

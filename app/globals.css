@@ -2981,6 +2981,11 @@ footer {
   }
 }
 
+@media (min-width: 1280px) {
+  .ski.B .content{
+    margin-bottom: 25px;
+  }
+}
 @media (max-width: 767px) {
   .eight {
     left: auto;
