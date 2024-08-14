@@ -16,9 +16,9 @@ export default function Component() {
       <div className="absolute inset-0 maskV flex items-center justify-center">
         <div className="container px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
           <div className="space-y-4 place-content-center">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
               Transforming the Future with Innovation
-            </h1>
+            </h2>
             <p className="text-lg md:text-xl">
               Discover how our cutting-edge solutions are driving progress and
               shaping the industries of tomorrow.

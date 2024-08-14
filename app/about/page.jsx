@@ -7,6 +7,11 @@ import Footer from "../_component/Footer/Footer";
 import Landing from "../_component/Landing/Landing";
 import AboutSection from "../_component/AboutSection/AboutSection";
 
+
+export const metadata = {
+  title: "About",
+};
+
 const About = () => {
   return (
     <>

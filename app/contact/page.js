@@ -27,6 +27,7 @@ const Contact = () => {
 
   return (
     <>
+    <title>Contact - Wesmart For Technology</title>
       <div className="contactP">
         <Landing className="olurmu">
           <div style={{ top: "110px", position: "relative" }}>

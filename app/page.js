@@ -15,6 +15,7 @@ export default function Home() {
   // }, []);
   return (
     <>
+    <title>Home - Wesmart For Technology</title>
       <Landing>
         {/* <Navbar /> */}
         <Main />

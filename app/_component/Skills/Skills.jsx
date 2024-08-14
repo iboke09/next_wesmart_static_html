@@ -45,15 +45,15 @@ const Skills = () => {
             <h2 className="title blawh text-xl" data-aos="fade-left">
               Wesmart Technology
             </h2>
-            <h1 className="title-2 blawh text-4xl" data-aos="fade-left">
+            <h2 className="title-2 blawh text-4xl" data-aos="fade-left">
               SAP
-            </h1>
+            </h2>
             <p className="blawh" data-aos="fade-left">
               Elevate Your Business with Expert SAP Solutions
             </p>
           </div>
           <div className="mask" data-aos="fade-up">
-            <h1 className="title">SAP CONSALTENT</h1>
+            <h2 className="title">SAP CONSALTENT</h2>
             <Image
               src={imageS}
               className="sapimg"
@@ -109,13 +109,13 @@ const Skills = () => {
             <h2 className="title blawh text-xl" data-aos="fade-left">
               Wesmart Technology
             </h2>
-            <h1
+            <h2
               className="title-2 blawh text-4xl ue"
               data-aos="fade-left"
               style={{ color: "#eb68b3 !important" }}
             >
               Graphic
-            </h1>
+            </h2>
             <p className="blawh" data-aos="fade-left">
               Captivate Your Audience with Innovative Graphic Designs
             </p>
@@ -142,9 +142,9 @@ const Skills = () => {
             height={1200}
           />
           <div className="mask" data-aos="fade-up">
-            <h1 className="title ue" style={{ color: "#eb68b3 !important" }}>
+            <h2 className="title ue" style={{ color: "#eb68b3 !important" }}>
               Graphic Design
-            </h1>
+            </h2>
             <Image
               src={image22}
               className="sapimg"
@@ -196,15 +196,15 @@ const Skills = () => {
             <h2 className="title blawh text-xl" data-aos="fade-left">
               Wesmart Technology
             </h2>
-            <h1 className="title-2 blawh text-4xl" data-aos="fade-left">
+            <h2 className="title-2 blawh text-4xl" data-aos="fade-left">
               Web Design & Development
-            </h1>
+            </h2>
             <p className="blawh" data-aos="fade-left">
               Create Stunning Websites with Our Design and Development
             </p>
           </div>
           <div className="mask" data-aos="fade-up" data-aos-duration="1000">
-            <h1 className="title">Web Development</h1>
+            <h2 className="title">Web Development</h2>
             <Image
               // data-aos="fade-up"
               // data-aos-duration="1000"

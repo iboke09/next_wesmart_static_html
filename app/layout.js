@@ -18,7 +18,7 @@ const lato = Lato({
 });
 export const metadata = {
   title: {
-    default: "Wesmart For Technology",
+    // default: "Wesmart For Technology",
     template: "%s - Wesmart For Technology",
   },
   description:
