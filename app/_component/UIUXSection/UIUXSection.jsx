@@ -35,6 +35,7 @@ export default function UIUXSection() {
                 width={250}
                 height={100}
                 className="ilstU"
+                quality={100}
               />
             </div>
             <div className="icermaskUI">
