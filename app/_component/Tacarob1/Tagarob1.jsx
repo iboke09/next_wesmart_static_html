@@ -121,7 +121,7 @@ const Tagarob1 = () => {
               <div className="-mx-6 lg:col-span-2 lg:mx-0">
                 <div id="keen-slider" className="keen-slider">
                   <div className="keen-slider__slide">
-                    <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+                    <div className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
                       <div>
                         <div className="flex gap-0.5 denel1">
                           <svg
@@ -188,11 +188,11 @@ const Tagarob1 = () => {
                       <h3 className="mt-4 text-sm font-medium text-gray-700 sm:mt-6 bg-transparent">
                         &mdash; Michael Scott
                       </h3>
-                    </blockquote>
+                    </div>
                   </div>
 
                   <div className="keen-slider__slide">
-                    <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+                    <div className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
                       <div>
                         <div className="flex gap-0.5 denel1">
                           <svg
@@ -259,11 +259,11 @@ const Tagarob1 = () => {
                       <h3 className="mt-4 text-sm font-medium text-gray-700 sm:mt-6 bg-transparent">
                         &mdash; Michael Scott
                       </h3>
-                    </blockquote>
+                    </div>
                   </div>
 
                   <div className="keen-slider__slide">
-                    <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+                    <div className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
                       <div>
                         <div className="flex gap-0.5 denel1">
                           <svg
@@ -330,7 +330,7 @@ const Tagarob1 = () => {
                       <h3 className="mt-4 text-sm font-medium text-gray-700 sm:mt-6 bg-transparent">
                         &mdash; Michael Scott
                       </h3>
-                    </blockquote>
+                    </div>
                   </div>
                 </div>
               </div>
