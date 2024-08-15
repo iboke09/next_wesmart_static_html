@@ -26,7 +26,7 @@ export const metadata = {
   canonical: "https://wesmartt.com",
 
   openGraph: {
-    title: "Invent and Innovate Endlessly—Technology Is Always Evolving",
+    title: "With WeSmart Innovate Beyond Limits",
     description:
       "We offer innovative SAP solutions, top-notch website and store designs with the fastest performance, and exceptional UI/UX services for user experience.",
     url: "https://wesmartt.com",
@@ -42,7 +42,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Invent and Innovate Endlessly—Technology Is Always Evolving",
+    title: "With WeSmart Innovate Beyond Limits",
     description:
       "We offer innovative SAP solutions, top-notch website and store designs with the fastest performance, and exceptional UI/UX services for user experience.",
     image: "https://wesmart-seven.vercel.app/images/opengraph-image.png",
