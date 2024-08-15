@@ -33,7 +33,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://wesmartt/logo.png",
+        url: "https://wesmart-seven.vercel.app/logo.png",
         alt: "Sap and all web development services",
       },
     ],
@@ -44,7 +44,7 @@ export const metadata = {
     title: "Wesmart For Technology",
     description:
       "We offer innovative SAP solutions, top-notch website and store designs with the fastest performance, and exceptional UI/UX services for user experience.",
-    image: "https://wesmartt/logo.png",
+    image: "https://wesmart-seven.vercel.app/logo.png",
   },
   additionalMetaTags: [
     {
