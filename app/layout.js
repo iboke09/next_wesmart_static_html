@@ -33,7 +33,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        // url: "/imgs/logo.png",
+        url: "https://wesmart-seven.vercel.app/opengraph-image.png",
         alt: "Sap and all web development services",
       },
     ],
@@ -44,7 +44,7 @@ export const metadata = {
     title: "Wesmart For Technology",
     description:
       "We offer innovative SAP solutions, top-notch website and store designs with the fastest performance, and exceptional UI/UX services for user experience.",
-    // image: "/imgs/logo.png",
+    image: "https://wesmart-seven.vercel.app/opengraph-image.png",
   },
   additionalMetaTags: [
     {
@@ -63,7 +63,7 @@ export const metadata = {
         "@type": "Organization",
         "name": "Wesmart For Technology",
         "url": "https://wesmartt.com",
-        "logo": "",
+        "logo": "https://wesmart-seven.vercel.app/opengraph-image.png",
         "sameAs": [
           "https://www.facebook.com/wesmartt",
           "https://www.twitter.com/wesmartt"
