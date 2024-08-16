@@ -64,7 +64,7 @@ const Main = () => {
           href="#sap"
           style={{ fontWeight: "normal" }}
         > 
-          learn more
+          learn more 
         </Link>
       </div>
       <div className="tawsit">
