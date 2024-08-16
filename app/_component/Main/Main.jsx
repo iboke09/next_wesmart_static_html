@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import image from "../../img/Frame.svg";
+import image from "../../img/Frame.png";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -17,7 +17,7 @@ const Main = () => {
       },
     },
   };
-  const spanVariants = {
+  const spanVariants = { 
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -74,6 +74,7 @@ const Main = () => {
           width={450}
           height={200}
           loading="eager"
+          quality={100}
         />
       </div>
     </div>
