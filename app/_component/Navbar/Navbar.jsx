@@ -19,7 +19,6 @@ function Navbar({ active }) {
     { name: "Services", path: "/services" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
-
   ];
   const isActive = (path) => {
     return currentPath === path;
@@ -38,6 +37,7 @@ function Navbar({ active }) {
               height={100}
               quality={100}
               className="tazbit"
+              loading="eager"
             />
           </Link>
           <nav className="yami lg:block ">
