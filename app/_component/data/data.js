@@ -1,4 +1,3 @@
-import image from "./logo192.png";
 import {
   FcCircuit,
   FcFaq,

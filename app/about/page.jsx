@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import img from "../img/Mystery box-rafiki.svg";
-import img1 from "../img/Man thinking-bro.svg";
-import img2 from "../img/SvgVector 1PNG.png";
+import img from "/public/img/Mystery box-rafiki.svg";
+import img1 from "/public/img/Man thinking-bro.svg";
+import img2 from "/public/img/SvgVector 1PNG.png";
 import Footer from "../_component/Footer/Footer";
 import Landing from "../_component/Landing/Landing";
 import AboutSection from "../_component/AboutSection/AboutSection";

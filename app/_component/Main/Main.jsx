@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import image from "../../img/Frame.png";
+import image from "/public/img/Frame.png";
 import Link from "next/link";
 import Image from "next/image";
 

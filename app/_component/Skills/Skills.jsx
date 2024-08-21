@@ -2,21 +2,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import image from "../../img/s2.jpg.webp";
-import image5 from "../../img/s3.jpg.webp";
-import image1 from "../../img/WhatsApp Görsel 2023-09-24 saat 23.10.28_35b53247.jpg";
-import image2 from "../../img/WhatsApp Görsel 2023-10-07 saat 12.13.18_da4dcc76.jpg";
-import image3 from "../../img/WhatsApp Görsel 2023-10-07 saat 12.11.44_8cd07256.jpg";
-import image4 from "../../img/landing13.jpg";
 import { motion } from "framer-motion";
 import { FcSupport } from "react-icons/fc";
-import imageS from "../../img/enterprise-resource-planning-holographic-interface.jpg";
-import imageS1 from "../../img/abstract-background-with-low-poly-design.jpg";
-import image22 from "../../img/emily-bernal-BM3U_D2lygo-unsplash.jpg";
-import image23 from "../../img/kelly-sikkema-Dx1b5ucschA-unsplash.jpg";
-import image24 from "../../img/florian-olivo-4hbJ-eymZ1o-unsplash.jpg";
-import image25 from "../../img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg";
-import image26 from "../../img/nothingso-19.png";
+import imageS from "/public/img/enterprise-resource-planning-holographic-interface.jpg";
+import imageS1 from "/public/img/abstract-background-with-low-poly-design.jpg";
+import image22 from "/public/img/emily-bernal-BM3U_D2lygo-unsplash.jpg";
+import image23 from "/public/img/kelly-sikkema-Dx1b5ucschA-unsplash.jpg";
+import image24 from "/public/img/florian-olivo-4hbJ-eymZ1o-unsplash.jpg";
+import image25 from "/public/img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg";
+import image26 from "/public/img/nothingso-19.png";
 import { SiCodesignal } from "react-icons/si";
 const Skills = () => {
   return (

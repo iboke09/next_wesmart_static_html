@@ -1,15 +1,10 @@
 "use client";
 import React, { Suspense } from "react";
 import Image from "next/image";
-import image from "../../img/v1.jpg.webp";
-import image1 from "../../img/v2.jpg.webp";
-import image2 from "../../img/v3.jpg.webp";
-import image3 from "../../img/v4.jpg.webp";
-import imageb from "../../img/IMG_0480.webp";
-import image4 from "../../img/WhatsApp Görsel 2023-09-24 saat 23.10.28_35b53247.jpg";
-import image5 from "../../img/WhatsApp Görsel 2023-10-07 saat 12.11.44_8cd07256.jpg";
-import image6 from "../../img/WhatsApp Görsel 2023-10-07 saat 12.12.33_c77dbd98.jpg";
-import image7 from "../../img/WhatsApp Görsel 2023-10-07 saat 12.13.18_da4dcc76.jpg";
+import image1 from "/public/img/v2.jpg.webp";
+import image2 from "/public/img/v3.jpg.webp";
+import image3 from "/public/img/v4.jpg.webp";
+import imageb from "/public/img/IMG_0480.webp";
 import { FaFacebook } from "react-icons/fa6";
 import { FaYoutube, FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
@@ -186,7 +181,7 @@ const Our = () => {
             data-aos-duration="1750"
           >
             <Link href="#site" aria-label="Read more about the evolution of the internet and its future">
-              <Image src={image} width={1000} height={100} alt="" />
+              <Image src={image2} width={1000} height={100} alt="" />
             </Link>
 
             <div className="tutan">

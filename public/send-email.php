@@ -1,7 +1,4 @@
 <?php
-    header('Access-Control-Allow-Origin: https://wesmart-seven.vercel.app/Contact');
-    header('Access-Control-Allow-Methods: POST');
-    header('Access-Control-Allow-Headers: Content-Type');
     $to = "fazexxibrahim@gmail.com";
     $name=$_POST["name"]; 
     $emaill=$_POST["email"];
@@ -15,21 +12,17 @@
     }else{
         echo "";
     }
-// }else{
-//     echo"a";
-// }
+
     ?>
 <!DOCTYPE html>
 <html lang="en" style="overflow-x: hidden">
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- <link rel="stylesheet" href="csso/all.min.css" />
-<link rel="stylesheet" href="./phpstyle.css" /> -->
+
 <!-- Google Fonts -->
 <title>Wesmart</title>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
-<!-- <link rel="icon" href="" /> -->
 </head>
 
 
@@ -57,6 +50,6 @@
 
 <script>
 setTimeout(function() {
-    location.href = "http://localhost:3000/Contact"
+    location.href = "http://wesmartt.com/contact"
 }, 4000)
 </script>

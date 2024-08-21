@@ -1,7 +1,7 @@
 import Image from "next/image";
-import image from "../../img/uiuxS.png";
-import image1 from "../../img/WebSectionIllustration.svg";
-import image2 from "../../img/ErpSectionIllustration.svg";
+import image from "/public/img/uiuxS.png";
+import image1 from "/public/img/WebSectionIllustration.svg";
+import image2 from "/public/img/ErpSectionIllustration.svg";
 export default function UIUXSection() {
   return (
     <>

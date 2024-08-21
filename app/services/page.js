@@ -6,7 +6,7 @@ import React from "react";
 import styles from "./Services.module.css";
 import Landing from "../_component/Landing/Landing";
 import Image from "next/image";
-import image from "../img/LandingPageVersion2.png";
+import image from "/public/img/LandingPageVersion2.png";
 import ERPSection from "../_component/ERPSection/ERPSection.jsx";
 import Footer from "../_component/Footer/Footer";
 import UIUXSection from "../_component/UIUXSection/UIUXSection";

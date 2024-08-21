@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image from "../../img/Light_Logo.svg";
+import image from "/public/img/Light_Logo.svg";
 export default function AboutSection() {
   return (
     <>

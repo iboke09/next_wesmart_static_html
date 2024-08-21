@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "./ContactForm.module.css";
 import Image from "next/image";
-import img from "../img/ContactUsvector 1.svg";
+import img from "/public/img/ContactUsvector 1.svg";
 import Footer from "../_component/Footer/Footer";
 import Landing from "../_component/Landing/Landing";
 const Contact = () => {
@@ -21,13 +21,25 @@ const Contact = () => {
     });
   };
   const handleSubmit = async (e) => {
-    // e.preventDefault();
-    console.log("Form data submitted:", formData);
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+
+    const response = await fetch("/send-email.php", {
+      method: "POST",
+      body: formData,
+    });
+
+    if (response.ok) {
+      alert("Email sent successfully!");
+    } else {
+      alert("Failed to send email.");
+    }
   };
 
   return (
     <>
-    <title>Contact - Wesmart For Technology</title>
+      <title>Contact - Wesmart For Technology</title>
       <div className="contactP">
         <Landing className="olurmu">
           <div style={{ top: "110px", position: "relative" }}>
@@ -44,8 +56,7 @@ const Contact = () => {
                     <div className={styles.contactFormContainer}>
                       <h2 className="contact_title">Contact us</h2>
                       <form
-                        action={"http://localhost:8000/server.php"}
-                        onSubmit={(event) => handleSubmit(event)}
+                        onSubmit={handleSubmit}
                         className={styles.contactForm}
                         method="POST"
                       >

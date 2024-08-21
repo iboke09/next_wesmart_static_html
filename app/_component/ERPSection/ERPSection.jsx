@@ -1,7 +1,7 @@
 import styles from "./ERPSection.module.css";
 import Image from "next/image";
-import image from '../../img/ErpPgoto.png'
-import image1 from '../../img/ErpSectionIllustration.svg'
+import image from '/public/img/ErpPgoto.png'
+import image1 from '/public/img/ErpSectionIllustration.svg'
 const ERPSection = () => {
   return (
     <div className="theAPP"
