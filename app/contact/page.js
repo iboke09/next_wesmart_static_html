@@ -16,7 +16,6 @@ const Contact = () => {
   });
 
   const triggerEmail = async (data) => {
-    // data.preventDefault();
     await emailjs
       .send(
         "service_pv5ogp6",
@@ -25,23 +24,23 @@ const Contact = () => {
         "U7Ed0tKLtms1lZg0_"
       )
       .then((success) => {
-        console.log(success);
+        alert("The Email Has Been Sent Successfully.");
       })
       .catch((err) => {
-        console.log(err);
+        alert("Sorry, Failed To Send Email");
       });
   };
 
   const onFormSubmit = (e) => {
-    e.preventDefault();
-    console.log(e.target)
+    console.log(e.target);
     const data = {
-      name:e.target[0].value,
-      email:e.target[1].value,
-      message:e.target[2].value,
-    }
-    console.log(data)
-    triggerEmail(data)
+      name: e.target[0].value,
+      email: e.target[1].value,
+      message: e.target[2].value,
+    };
+    console.log(data);
+    triggerEmail(data);
+    e.preventDefault();
   };
 
   const handleChange = (e) => {
