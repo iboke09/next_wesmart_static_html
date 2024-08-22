@@ -1,5 +1,6 @@
 // components/ContactForm.js
 "use client";
+import emailjs from "emailjs-com";
 import { useState } from "react";
 import styles from "./ContactForm.module.css";
 import Image from "next/image";
@@ -7,34 +8,44 @@ import img from "/public/img/ContactUsvector 1.svg";
 import Footer from "../_component/Footer/Footer";
 import Landing from "../_component/Landing/Landing";
 const Contact = () => {
+  const [messageStatus, setMessageStatus] = useState("");
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    from_email: "",
     message: "",
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+  const triggerEmail = async (data) => {
+    // data.preventDefault();
+    await emailjs
+      .send(
+        "service_pv5ogp6",
+        "template_csebbz8",
+        formData,
+        "U7Ed0tKLtms1lZg0_"
+      )
+      .then((success) => {
+        console.log(success);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
-  const handleSubmit = async (e) => {
+
+  const onFormSubmit = (e) => {
     e.preventDefault();
-
-    const formData = new FormData(e.target);
-
-    const response = await fetch("/send-email.php", {
-      method: "POST",
-      body: formData,
-    });
-
-    if (response.ok) {
-      alert("Email sent successfully!");
-    } else {
-      alert("Failed to send email.");
+    console.log(e.target)
+    const data = {
+      name:e.target[0].value,
+      email:e.target[1].value,
+      message:e.target[2].value,
     }
+    console.log(data)
+    triggerEmail(data)
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
@@ -56,16 +67,15 @@ const Contact = () => {
                     <div className={styles.contactFormContainer}>
                       <h2 className="contact_title">Contact us</h2>
                       <form
-                        onSubmit={handleSubmit}
+                        onSubmit={onFormSubmit}
                         className={styles.contactForm}
-                        method="POST"
                       >
                         <div className={styles.inputGroup}>
                           <input
                             type="text"
-                            id="name"
-                            name="name"
-                            value={formData.name}
+                            id="from_name"
+                            name="from_name"
+                            value={formData.from_name}
                             onChange={handleChange}
                             placeholder="Name"
                             required
@@ -75,8 +85,8 @@ const Contact = () => {
                         <div className={styles.inputGroup}>
                           <input
                             type="email"
-                            id="email"
-                            name="email"
+                            id="from_email"
+                            name="from_email"
                             value={formData.email}
                             onChange={handleChange}
                             placeholder="Email"
