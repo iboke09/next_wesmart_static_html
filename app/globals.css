@@ -3015,7 +3015,7 @@ footer {
   will-change: animation, background-color, background-position;
 }
 
-@media (max-height: 800px) {
+@media (max-height: 820px) {
   .text {
     transform: translate(-50%, -60%);
   }
