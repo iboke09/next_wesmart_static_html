@@ -3019,4 +3019,13 @@ footer {
   .text {
     transform: translate(-50%, -60%);
   }
+  .textA{
+    transform: translate(-50%, -57%);
+  }
+  .tawsitS{
+    top: -40px;
+  }
+  .raf3{
+    top: 65px;
+  }
 }
