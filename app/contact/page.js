@@ -9,6 +9,7 @@ import Footer from "../_component/Footer/Footer";
 import Landing from "../_component/Landing/Landing";
 const Contact = () => {
   const [messageStatus, setMessageStatus] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     from_name: "",
     from_email: "",
@@ -16,6 +17,7 @@ const Contact = () => {
   });
 
   const triggerEmail = async (data) => {
+    setIsLoading(true);
     await emailjs
       .send(
         "service_pv5ogp6",
@@ -25,6 +27,12 @@ const Contact = () => {
       )
       .then((success) => {
         alert("The Email Has Been Sent Successfully.");
+        setIsLoading(false)
+        setFormData({
+          from_name: "",
+          from_email: "",
+          message: "",
+        });
       })
       .catch((err) => {
         alert("Sorry, Failed To Send Email");
@@ -86,7 +94,7 @@ const Contact = () => {
                             type="email"
                             id="from_email"
                             name="from_email"
-                            value={formData.email}
+                            value={formData.from_email}
                             onChange={handleChange}
                             placeholder="Email"
                             required
@@ -105,7 +113,11 @@ const Contact = () => {
                           />
                         </div>
                         <button type="submit" className={styles.button}>
-                          Send Message
+                          {isLoading ? (
+                            <span className={styles.loader}></span> // رمز التحميل
+                          ) : (
+                            "Send Message" // النص الأصلي للزر
+                          )}
                         </button>
                       </form>
                     </div>
