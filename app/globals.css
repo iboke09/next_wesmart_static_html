@@ -28,7 +28,7 @@
   --border-F: 60px;
   --maskERP-color: rgb(0 21 46);
   --box-shadow-color: #026db996 0px 2px 12px;
-  --blawhs-colorS:rgba(255, 255, 255, 0.526);
+  --blawhs-colorS: rgba(255, 255, 255, 0.526);
 }
 
 /* --hidden-img:block;
@@ -42,7 +42,7 @@
 
 .darko {
   transition: 0.7s;
-  --blawhs-colorS:rgba(0, 0, 0, 0.493);
+  --blawhs-colorS: rgba(0, 0, 0, 0.493);
   --box-shadow-color: #1cb3ff80 0px 0px 10px;
   --blawhsUI-color: #40bfff42 0px 0px 40px;
   --maskERP-color: white;
@@ -80,10 +80,10 @@
 /* max-height: 100%;  */
 /* } */
 
-img{
+img {
   user-select: none;
-  -webkit-user-drag: none; 
-  -moz-user-select: none; 
+  -webkit-user-drag: none;
+  -moz-user-select: none;
 }
 .agib2 {
   color: var(--agib2-color);
@@ -2457,7 +2457,7 @@ footer {
   border-radius: 20px;
   height: 780px;
   background-color: var(--main-alt-color1);
-  box-shadow: var(--blawhsUI-color) ;
+  box-shadow: var(--blawhsUI-color);
 }
 
 .maskUI {
@@ -2981,7 +2981,7 @@ footer {
 }
 
 @media (min-width: 1280px) {
-  .ski.B .content{
+  .ski.B .content {
     margin-bottom: 25px;
   }
 }
@@ -3006,12 +3006,17 @@ footer {
   .all-about .box:nth-child(2)::after {
     right: 155px;
   }
-  .lanoMask{
+  .lanoMask {
     margin-bottom: 100px;
   }
 }
 
-
 .landing .text h2.animate {
-  will-change: animation, background-color,background-position;
+  will-change: animation, background-color, background-position;
+}
+
+@media (max-height: 800px) {
+  .text {
+    transform: translate(-50%, -60%);
+  }
 }
