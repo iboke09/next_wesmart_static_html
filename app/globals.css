@@ -3088,3 +3088,6 @@ footer {
 .containerS .cards .splide__pagination li button:hover{
   background-color: #4cdcff;
 }
+.contactP .landing::after{
+  z-index: var(--agib-zindex_2);
+}
