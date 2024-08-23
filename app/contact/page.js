@@ -27,7 +27,7 @@ const Contact = () => {
       )
       .then((success) => {
         alert("The Email Has Been Sent Successfully.");
-        setIsLoading(false)
+        setIsLoading(false);
         setFormData({
           from_name: "",
           from_email: "",
@@ -129,10 +129,9 @@ const Contact = () => {
           <div
             style={{ top: "200px", position: "relative" }}
             className="footer_top"
-          >
-            <Footer />
-          </div>
+          ></div>
         </Landing>
+        <Footer />
       </div>
     </>
   );
