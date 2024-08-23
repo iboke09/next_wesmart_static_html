@@ -1115,7 +1115,7 @@ footer {
     width: 160px !important;
   }
   .containerS .cards .splide__pagination {
-    top: 545px !important;
+    top: 465px !important;
   }
   .maskdarkapp {
     left: 95px !important;
@@ -2972,6 +2972,9 @@ footer {
   .all-about .box:nth-child(2)::after {
     right: 215px;
   }
+  .textS .centere p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 991px) {
@@ -3076,3 +3079,4 @@ footer {
     transform: translate(-50%, -50%);
   }
 }
+
