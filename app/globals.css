@@ -912,7 +912,7 @@ footer {
   background-color: var(--shadow-color);
   border-radius: 50%;
   filter: blur(100px);
-  z-index: var(--agib-zindex_2);
+  z-index: -1;
 }
 
 .hait::before {
@@ -3019,13 +3019,60 @@ footer {
   .text {
     transform: translate(-50%, -60%);
   }
-  .textA{
+  .textA {
     transform: translate(-50%, -57%);
   }
-  .tawsitS{
+  .tawsitS {
     top: -40px;
   }
-  .raf3{
+  .raf3 {
     top: 65px;
+  }
+}
+
+@media (max-height: 640px) {
+  .videoT {
+    height: 135% !important;
+  }
+}
+
+@media (max-height: 600px) and (max-width: 1280px) {
+  .landing .text h2 {
+    font-size: 35px;
+    margin-bottom: 0px;
+  }
+  .text .first {
+    margin-bottom: -20px;
+  }
+  .card {
+    height: 75vh !important;
+  }
+  .containerS .cards .splide__pagination {
+    top: 465px !important;
+  }
+  .responsivenav {
+    top: -30px;
+  }
+  .theAPP {
+    margin-top: 45% !important;
+    text-align: center !important;
+    margin-bottom: 45% !important;
+  }
+  .headerUI {
+    margin-bottom: -50px;
+  }
+  .headerE {
+    margin-bottom: -50px;
+  }
+  .textA .centere {
+    top: -30px !important;
+  }
+  .text{
+    transform: translate(-50%, -100%);
+  }
+}
+@media (max-height: 600px) and (max-width: 991px) {
+  .text{
+    transform: translate(-50%, -50%);
   }
 }
