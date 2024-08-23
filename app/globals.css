@@ -2959,6 +2959,9 @@ footer {
   .all-about .box {
     padding: 97px 28px 277px;
   }
+  .hait{
+    margin-top: 200px;
+  }
 }
 
 @media (max-width: 1025px) {
