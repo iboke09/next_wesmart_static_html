@@ -140,6 +140,12 @@ ul {
   .container {
     width: 750px;
   }
+  .ihfa {
+    display: block;
+  }
+}
+.ihfa2 {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -2959,7 +2965,7 @@ footer {
   .all-about .box {
     padding: 97px 28px 277px;
   }
-  .hait{
+  .hait {
     margin-top: 200px;
   }
 }
@@ -3043,6 +3049,12 @@ footer {
 }
 
 @media (max-height: 600px) and (max-width: 1280px) {
+  .ihfa {
+    display: none;
+  }
+  .ihfa2 {
+    display: block;
+  }
   .landing .text h2 {
     font-size: 35px;
     margin-bottom: 0px;
@@ -3073,21 +3085,19 @@ footer {
   .textA .centere {
     top: -30px !important;
   }
-  .text{
+  .text {
     transform: translate(-50%, -100%);
   }
 }
 @media (max-height: 600px) and (max-width: 991px) {
-  .text{
+  .text {
     transform: translate(-50%, -50%);
   }
 }
 
-
-
-.containerS .cards .splide__pagination li button:hover{
+.containerS .cards .splide__pagination li button:hover {
   background-color: #4cdcff;
 }
-.contactP .landing::after{
+.contactP .landing::after {
   z-index: var(--agib-zindex_2);
 }

@@ -130,7 +130,12 @@ const Contact = () => {
             style={{ top: "200px", position: "relative" }}
             className="footer_top"
           ></div>
+          <div className="ihfa2">
+            <Footer />
+          </div>
         </Landing>
+      </div>
+      <div className="ihfa">
         <Footer />
       </div>
     </>
