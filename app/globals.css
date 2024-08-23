@@ -162,7 +162,9 @@ ul {
   .container {
     width: 970px;
   }
-
+  
+}
+@media (min-width: 992px) {
   .text {
     top: 500px !important;
   }
@@ -3044,7 +3046,7 @@ footer {
 
 @media (max-height: 640px) {
   .videoT {
-    height: 135% !important;
+    height: 175% !important;
   }
 }
 
@@ -3101,3 +3103,10 @@ footer {
 .contactP .landing::after {
   z-index: var(--agib-zindex_2);
 }
+
+
+/* @media (max-height: 600px) and (max-width:1400px){
+  .videoT{
+    width: 170% !important;
+  }
+} */
