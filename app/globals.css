@@ -162,7 +162,6 @@ ul {
   .container {
     width: 970px;
   }
-  
 }
 @media (min-width: 992px) {
   .text {
@@ -2972,6 +2971,12 @@ footer {
   }
 }
 
+@media (max-height: 600px) and (max-width: 1626px) {
+  .theAPP{
+    margin-top: 15% !important;
+    margin-bottom: 30% !important;
+  }
+}
 @media (max-width: 1025px) {
   .eight {
     left: 353px;
@@ -3051,6 +3056,12 @@ footer {
 }
 
 @media (max-height: 600px) and (max-width: 1280px) {
+  .textA img{
+    width: 500px;
+  }
+  .tawsit {
+    top: 17px;
+  }
   .ihfa {
     display: none;
   }
@@ -3074,7 +3085,7 @@ footer {
     top: -30px;
   }
   .theAPP {
-    margin-top: 45% !important;
+    margin-top: 25% !important;
     text-align: center !important;
     margin-bottom: 45% !important;
   }
@@ -3088,12 +3099,15 @@ footer {
     top: -30px !important;
   }
   .text {
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -90%);
   }
 }
-@media (max-height: 600px) and (max-width: 991px) {
+@media (max-height: 600px) and (max-width: 1026px) {
   .text {
     transform: translate(-50%, -50%);
+  }
+  .theAPP{
+    margin-top: 45% !important;
   }
 }
 
@@ -3104,9 +3118,30 @@ footer {
   z-index: var(--agib-zindex_2);
 }
 
-
 /* @media (max-height: 600px) and (max-width:1400px){
   .videoT{
     width: 170% !important;
   }
 } */
+
+@media (max-height: 600px) and (max-width: 1350px) {
+  .hait {
+    margin-bottom: 150px !important;
+    margin-top: 175px !important;
+  }
+}
+
+@media (max-height: 600px) and (min-width: 1240px) {
+  .our {
+    margin-top: 100px;
+  }
+  .tawsitS{
+    top: -155px;
+  }
+}
+
+@media (max-height: 600px) and (max-width: 1240px) {
+  .inasha{
+    margin-bottom: 100px !important;
+  }
+}
