@@ -3,4 +3,4 @@ export default function cloudinaryLoader({ src, width, quality }) {
     return `https://res.cloudinary.com/demo/image/upload/${params.join(
       ','
     )}${src}`
-  }
+  } 
