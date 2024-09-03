@@ -15,7 +15,9 @@ import "aos/dist/aos.css";
 import Loading from "@/app/loading";
 const Our = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      // once: true,
+    });
   }, []);
   return (
     <>
@@ -88,7 +90,10 @@ const Our = () => {
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="1250"
           >
-            <Link href="#developer" aria-label="Read more about the restoration of ancient artifacts in Egypt">
+            <Link
+              href="#developer"
+              aria-label="Read more about the restoration of ancient artifacts in Egypt"
+            >
               <Image src={image1} alt="" width={1000} height={100} />
             </Link>
 
@@ -134,7 +139,10 @@ const Our = () => {
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="1500"
           >
-            <Link href="#web" aria-label="Read more about the benefits of renewable energy sources">
+            <Link
+              href="#web"
+              aria-label="Read more about the benefits of renewable energy sources"
+            >
               {" "}
               <Image src={image3} width={1000} height={100} alt="" />
             </Link>
@@ -180,7 +188,10 @@ const Our = () => {
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="1750"
           >
-            <Link href="#site" aria-label="Read more about the evolution of the internet and its future">
+            <Link
+              href="#site"
+              aria-label="Read more about the evolution of the internet and its future"
+            >
               <Image src={image2} width={1000} height={100} alt="" />
             </Link>
 
@@ -228,6 +239,6 @@ const Our = () => {
       </div>
     </>
   );
-}
+};
 
 export default Our;

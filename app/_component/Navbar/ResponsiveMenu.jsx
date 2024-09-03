@@ -22,7 +22,7 @@ function ResponsiveMenu({ showMenu, toggleMenu }) {
           width: "100%",
           height: "100vh",
           background: "rgba(0, 0, 0, 0.5)",
-          zIndex: "10",
+          zIndex: "10000",
           transition: "0.5s",
         }}
       ></div>
@@ -32,7 +32,7 @@ function ResponsiveMenu({ showMenu, toggleMenu }) {
           zIndex: "999",
           backgroundColor: "rgb(17 47 96)",
           height: "100vh",
-          zIndex: "1002",
+          zIndex: "10002",
         }}
         className={`${
           showMenu ? "left-0 " : "-left-[100%]  "

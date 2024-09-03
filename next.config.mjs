@@ -1,10 +1,14 @@
 import { withNextVideo } from "next-video/process";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output:"export",
+  output: "export",
+  images: {
+    loader: "custom",
+    loaderFile: "./my-loader.ts",
+  },
 };
 
-export default withNextVideo(nextConfig, { folder: 'movable' });
+export default withNextVideo(nextConfig, { folder: "movable" });
 
 // const withVideos = require("next-videos");
 
