@@ -1,12 +1,8 @@
 "use client";
 import React from "react";
-import logo from "/public/img/TheFinalOfDesigns-02 (1).webp";
-import { Navlink } from "./Navbar";
 import Link from "next/link";
-import Image from "next/image";
 import { VscFoldRight, VscFoldUp, VscChevronRight } from "react-icons/vsc";
 import { AiOutlineClose } from "react-icons/ai";
-import DarkMode from "../DarkMode/DarkMode";
 function ResponsiveMenu({ showMenu, toggleMenu }) {
   return (
     <>
@@ -45,10 +41,10 @@ function ResponsiveMenu({ showMenu, toggleMenu }) {
             toggleMenu();
           }}
         />
-        <Image
+        <img
           // style={{ height: "115px" }}
           decoding="async"
-          src={logo}
+          src={"/img/TheFinalOfDesigns-02 (1).webp"}
           alt="Logo"
           width={180}
           height={100}

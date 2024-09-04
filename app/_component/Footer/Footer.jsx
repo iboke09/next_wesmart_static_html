@@ -1,6 +1,4 @@
 import React from "react";
-import logo from "/public/img/TheFinalOfDesigns-02 (1).webp";
-import Image from "next/image";
 import Link from "next/link";
 // import Spline from "@splinetool/react-spline";
 
@@ -11,13 +9,13 @@ const Footer = () => {
       <footer className="">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="flex justify-center text-teal-600 dark:text-teal-300">
-            <Image
+            <img
               decoding="async"
-              src={logo}
+              src={"/img/TheFinalOfDesigns-02 (1).webp"}
               alt="Logo"
               width={140}
               height={100}
-              quality={100}
+              loading="lazy"
             />
           </div>
           <p

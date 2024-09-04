@@ -1,5 +1,3 @@
-import Image from "next/image";
-import image from "/public/img/Light_Logo.svg";
 export default function AboutSection() {
   return (
     <>
@@ -7,7 +5,7 @@ export default function AboutSection() {
         className="image-darta"
         style={{ textAlign: "right", zIndex: "100" }}
       >
-        <Image width={400} height={100} src={image} alt="" />
+        <img width={400} height={100} src={"/img/Light_Logo.svg"} alt="" loading="lazy" />
       </div>
       <div className="container" style={{ margin: "100px auto 100px auto" }}>
         <div className="all-about grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-16">

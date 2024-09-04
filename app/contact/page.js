@@ -3,8 +3,6 @@
 import emailjs from "emailjs-com";
 import { useState } from "react";
 import styles from "./ContactForm.module.css";
-import Image from "next/image";
-import img from "/public/img/ContactUsvector 1.svg";
 import Footer from "../_component/Footer/Footer";
 import Landing from "../_component/Landing/Landing";
 const Contact = () => {
@@ -66,7 +64,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
                   <div className="relative h-64  rounded-lg sm:h-80 lg:order-last lg:h-full why1">
                     <div className="locals" style={{ position: "relative" }}>
-                      <Image src={img} alt="Sap" width={1000} height={100} />
+                      <img src={"/img/ContactUsvector 1.svg"} alt="Sap" width={1000} height={100} loading="lazy"/>
                     </div>
                   </div>
 

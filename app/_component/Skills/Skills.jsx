@@ -1,16 +1,8 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import { FcSupport } from "react-icons/fc";
-import imageS from "/public/img/enterprise-resource-planning-holographic-interface.jpg";
-import imageS1 from "/public/img/abstract-background-with-low-poly-design.jpg";
-import image22 from "/public/img/emily-bernal-BM3U_D2lygo-unsplash.jpg";
-import image23 from "/public/img/kelly-sikkema-Dx1b5ucschA-unsplash.jpg";
-import image24 from "/public/img/florian-olivo-4hbJ-eymZ1o-unsplash.jpg";
-import image25 from "/public/img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg";
-import image26 from "/public/img/nothingso-19.png";
 import { SiCodesignal } from "react-icons/si";
 const Skills = () => {
   return (
@@ -48,23 +40,25 @@ const Skills = () => {
           </div>
           <div className="mask" data-aos="fade-up">
             <h2 className="title">SAP CONSALTENT</h2>
-            <Image
-              src={imageS}
+            <img
+              src={"/img/enterprise-resource-planning-holographic-interface_11zon.webp"}
               className="sapimg"
               width={200}
               height={200}
+              loading="lazy"
               alt="sap"
             />
             <p className="text1">
               Maximize efficiency with our SAP solutions — we streamline
               operations and offer expert support.
             </p>
-            <Image
-              src={imageS1}
+            <img
+              src={"/img/abstract-background-with-low-poly-design_11zon.webp"}
               className="sapimg2"
               width={200}
               height={200}
               alt="sap"
+              loading="lazy"
             />
             <p className="text2">
               Boost your edge with our SAP implementation — we ensure smooth
@@ -114,7 +108,7 @@ const Skills = () => {
               Captivate Your Audience with Innovative Graphic Designs
             </p>
           </div>
-          <Image
+          <img
             src="https://github.githubassets.com/assets/shape-2-f30dcc9bd35c.svg"
             style={{
               position: "absolute",
@@ -126,38 +120,42 @@ const Skills = () => {
             alt=""
             width={800}
             height={800}
+            loading="lazy"
           />
-          <Image
-            src={image26}
+          <img
+            src={"/img/BusinessCard-19_11zon.webp"}
             style={{ position: "absolute", left: "1300px", top: "165px" }}
             className="kayip1"
             alt=""
             width={1200}
             height={1200}
+            loading="lazy"
           />
           <div className="mask" data-aos="fade-up">
             <h2 className="title ue" style={{ color: "#eb68b3 !important" }}>
               Graphic Design
             </h2>
-            <Image
-              src={image22}
+            <img
+              src={"/img/emily-bernal-BM3U_D2lygo-unsplash_11zon.webp"}
               className="sapimg"
               width={200}
               height={200}
               alt="sap"
+              loading="lazy"
             />
             <p className="text1">
               Captivate with our graphic design — we bring your brand&apos;s
               vision to life with stunning visuals.
             </p>
-            <Image
+            <img
               // data-aos="fade-up"
               // data-aos-duration="1000"
-              src={image23}
+              src={"/img/kelly-sikkema-Dx1b5ucschA-unsplash_11zon.webp"}
               className="sapimg2"
               width={200}
               height={200}
               alt="sap"
+              loading="lazy"
             />
             <p className="text2">
               Our designs effectively communicate your message and leave a
@@ -199,27 +197,29 @@ const Skills = () => {
           </div>
           <div className="mask" data-aos="fade-up" data-aos-duration="1000">
             <h2 className="title">Web Development</h2>
-            <Image
+            <img
               // data-aos="fade-up"
               // data-aos-duration="1000"
-              src={image25}
+              src={"/img/jefferson-santos-9SoCnyQmkzI-unsplash_11zon.webp"}
               className="sapimg"
               width={200}
               height={200}
               alt="sap"
+              loading="lazy"
             />
             <p className="text1">
               We create attractive, fast websites that work on all devices,
               ensuring a smooth user experience.
             </p>
-            <Image
+            <img
               // data-aos="fade-up"
               // data-aos-duration="1000"
-              src={image24}
+              src={"/img/florian-olivo-4hbJ-eymZ1o-unsplash_11zon.webp"}
               className="sapimg2"
               width={200}
               height={200}
               alt="sap"
+              loading="lazy"
             />
             <p className="text2">
               We boost your best site’s visibility and performance with effective SEO

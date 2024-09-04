@@ -29,7 +29,7 @@ const ERPSection = () => {
             <button className="ERPcontactBtn"><span style={{position:'relative',zIndex:'100'}}>Contact Us</span></button>
           </div>
           <div className="icermask">
-            <Image src={image} alt="alt" width={270} height={100} />
+            <img src={"/img/ErpPgoto (1).png"} alt="alt" width={270} height={100} loading="lazy"/>
             <div className="boxERP">
               <h2 className="mainERPtitle">Skada Systems</h2>
               <p>
@@ -39,7 +39,7 @@ const ERPSection = () => {
                 error, ut ratione temporibus? Cupiditate, explicabo.
               </p>
             </div>
-            <Image src={image1} alt="alt" width={250} height={100} className="ilstE"/>
+            <img src={"/img/ErpSectionIllustration_11zon.png"} alt="alt" width={250} height={100} loading="lazy" className="ilstE"/>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import image from "/public/img/Frame.png";
+import image from "/public/img/Frame.webp";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -68,13 +68,13 @@ const Main = () => {
         </Link>
       </div>
       <div className="tawsit">
-        <Image
-          src={image}
+        <img
+          src="/img/Frame.webp"
           alt="alt"
           width={450}
           height={200}
           loading="eager"
-          quality={100}
+          // quality={100}
         />
       </div>
     </div>

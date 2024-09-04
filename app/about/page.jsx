@@ -1,12 +1,7 @@
-import Image from "next/image";
 import React from "react";
-import img from "/public/img/Mystery box-rafiki.svg";
-import img1 from "/public/img/Man thinking-bro.svg";
-import img2 from "/public/img/SvgVector 1PNG.png";
 import Footer from "../_component/Footer/Footer";
 import Landing from "../_component/Landing/Landing";
 import AboutSection from "../_component/AboutSection/AboutSection";
-
 
 export const metadata = {
   title: "About",
@@ -43,9 +38,9 @@ const About = () => {
             </div>
 
             <div className="tawsitS A" style={{ top: "-70px" }}>
-              <Image
+              <img
                 quality={100}
-                src={img2}
+                src={"/img/SvgVector 1.svg"}
                 alt="alt"
                 width={450}
                 height={200}

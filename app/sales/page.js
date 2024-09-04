@@ -2,8 +2,7 @@ import React, { Suspense } from "react";
 import Navbar from "../_component/Navbar/Navbar";
 import { color } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
-import image from "/public/img/IMG_0455.webp";
+
 import Loading from "../loading";
 export const metadata = {
   title: "Sales",
@@ -102,16 +101,17 @@ export default function Sales() {
               style={{ display: "flex", justifyContent: "center" }}
             >
               <Suspense fallback={<Loading />}>
-                <Image
+                <img
                   load="eager"
                   className="sura"
                   alt={"Sap"}
-                  src={image}
+                  src={"/img/IMG_0455.webp"}
                   width={400}
                   height={400}
                   style={{
                     borderRadius: "0px 67px",
                   }}
+                  loading="lazy"
                 />
               </Suspense>
             </div>

@@ -1,7 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import logo from "/public/img/TheFinalOfDesigns-02 (1).webp";
 import Link from "next/link";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
@@ -29,9 +27,9 @@ function Navbar({ active }) {
       <header className="header">
         <div className="container shadow-2xl" style={{ height: "78px" }}>
           <Link href="/">
-            <Image
+            <img
               decoding="async"
-              src={logo}
+              src={"/img/TheFinalOfDesigns-02 (1).webp"}
               alt="Logo"
               width={140}
               height={100}

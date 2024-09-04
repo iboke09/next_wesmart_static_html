@@ -1,10 +1,5 @@
 "use client";
 import React, { Suspense } from "react";
-import Image from "next/image";
-import image1 from "/public/img/v2.jpg.webp";
-import image2 from "/public/img/v3.jpg.webp";
-import image3 from "/public/img/v4.jpg.webp";
-import imageb from "/public/img/IMG_0480.webp";
 import { FaFacebook } from "react-icons/fa6";
 import { FaYoutube, FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
@@ -39,12 +34,13 @@ const Our = () => {
           >
             <Link href="/sales" id="sales">
               {" "}
-              <Image
-                src={imageb}
+              <img
+                src={"/img/IMG_0480.webp"}
                 alt="Sap"
                 width={1000}
                 height={100}
                 className="abdullah"
+                loading="lazy"
               />
             </Link>
 
@@ -94,7 +90,7 @@ const Our = () => {
               href="#developer"
               aria-label="Read more about the restoration of ancient artifacts in Egypt"
             >
-              <Image src={image1} alt="" width={1000} height={100} />
+              <img src={"/img/v2.jpg.webp"} alt="" width={1000} height={100} loading="lazy"/>
             </Link>
 
             <div className="tutan">
@@ -144,7 +140,7 @@ const Our = () => {
               aria-label="Read more about the benefits of renewable energy sources"
             >
               {" "}
-              <Image src={image3} width={1000} height={100} alt="" />
+              <img src={"/img/v4.jpg.webp"} width={1000} height={100} alt="" loading="lazy" />
             </Link>
             <div className="tutan">
               <h3 className="head">Adam Virland</h3>
@@ -192,7 +188,7 @@ const Our = () => {
               href="#site"
               aria-label="Read more about the evolution of the internet and its future"
             >
-              <Image src={image2} width={1000} height={100} alt="" />
+              <img src={"/img/v3.jpg.webp"} width={1000} height={100} alt="" loading="lazy"/>
             </Link>
 
             <div className="tutan">
