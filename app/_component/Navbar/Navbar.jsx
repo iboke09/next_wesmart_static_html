@@ -11,12 +11,12 @@ function Navbar({ active }) {
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
-
+  
   const pages = [
-    { name: "Home", path: "/" },
-    { name: "Services", path: "/services" },
-    { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/contact'},
   ];
   const isActive = (path) => {
     return currentPath === path;
@@ -33,7 +33,6 @@ function Navbar({ active }) {
               alt="Logo"
               width={140}
               height={100}
-              quality={100}
               className="tazbit"
               loading="eager"
             />

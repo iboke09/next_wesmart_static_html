@@ -1,7 +1,3 @@
-import styles from "./ERPSection.module.css";
-import Image from "next/image";
-import image from '/public/img/ErpPgoto.png'
-import image1 from '/public/img/ErpSectionIllustration.svg'
 const ERPSection = () => {
   return (
     <div className="theAPP"
@@ -29,7 +25,7 @@ const ERPSection = () => {
             <button className="ERPcontactBtn"><span style={{position:'relative',zIndex:'100'}}>Contact Us</span></button>
           </div>
           <div className="icermask">
-            <img src={"/img/ErpPgoto (1).png"} alt="alt" width={270} height={100} loading="lazy"/>
+            <img src={"/img/ErpPgoto (1).png"} alt="alt" width={270} height={100} loading="lazy" />
             <div className="boxERP">
               <h2 className="mainERPtitle">Skada Systems</h2>
               <p>
@@ -39,7 +35,7 @@ const ERPSection = () => {
                 error, ut ratione temporibus? Cupiditate, explicabo.
               </p>
             </div>
-            <img src={"/img/ErpSectionIllustration_11zon.png"} alt="alt" width={250} height={100} loading="lazy" className="ilstE"/>
+            <img src={"/img/ErpSectionIllustration_11zon.png"} alt="alt" width={250} height={100}  className="ilstE" loading="lazy"/>
           </div>
         </div>
       </div>

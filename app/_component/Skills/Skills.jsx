@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import { FcSupport } from "react-icons/fc";
@@ -45,8 +44,8 @@ const Skills = () => {
               className="sapimg"
               width={200}
               height={200}
-              loading="lazy"
               alt="sap"
+              loading="lazy"
             />
             <p className="text1">
               Maximize efficiency with our SAP solutions — we streamline
@@ -115,6 +114,7 @@ const Skills = () => {
               left: "1300px",
               top: "165px",
               zIndex: "1",
+            
             }}
             className="kayip"
             alt=""
@@ -155,7 +155,6 @@ const Skills = () => {
               width={200}
               height={200}
               alt="sap"
-              loading="lazy"
             />
             <p className="text2">
               Our designs effectively communicate your message and leave a

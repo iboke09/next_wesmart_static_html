@@ -5,7 +5,7 @@ export default function AboutSection() {
         className="image-darta"
         style={{ textAlign: "right", zIndex: "100" }}
       >
-        <img width={400} height={100} src={"/img/Light_Logo.svg"} alt="" loading="lazy" />
+        <img width={400} height={100} src={"/img/Light_Logo.svg"} alt="Wesmart Technologies" loading="lazy"/>
       </div>
       <div className="container" style={{ margin: "100px auto 100px auto" }}>
         <div className="all-about grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-16">

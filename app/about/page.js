@@ -39,7 +39,6 @@ const About = () => {
 
             <div className="tawsitS A" style={{ top: "-70px" }}>
               <img
-                quality={100}
                 src={"/img/SvgVector 1.svg"}
                 alt="alt"
                 width={450}

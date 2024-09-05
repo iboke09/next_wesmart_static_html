@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 const notFound = () => {
   return (
     <>
@@ -20,7 +21,7 @@ const notFound = () => {
                     height={100}
                     alt="error illustration"
                     class="left-0 top-0 w-full h-full"
-                    loading="lazy"
+                    loading="eager"
                   />
                 </div>{" "}
                 <h4 class="text-3xl mb-2 mt-4 font-bold text-center" style={{color:'var(--blawh-color)',transition:'0.7s'}}>
@@ -35,12 +36,12 @@ const notFound = () => {
                   <br />
                   Try going back to our homepage.
                 </p>{" "}
-                <a
+                <Link
                   href="/"
                   class=" hover:bg-blue-600 py-3 px-6 rounded font-bold text-lg text-white oma transition"
                 >
                   Go back to homepage
-                </a>
+                </Link>
               </div>
             </div>
           </div>

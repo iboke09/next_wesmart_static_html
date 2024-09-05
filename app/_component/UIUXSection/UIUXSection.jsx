@@ -15,7 +15,7 @@ export default function UIUXSection() {
         <div className="container UI">
           <div className="maskUI I">
             <div className="icermaskUI">
-              <img src={"/img/uiuxS.png"} alt="" width={280} height={100} loading="lazy" />
+              <img src={"/img/uiuxS.png"} alt="" width={280} height={100}  loading="lazy"/>
               <div className="boxUI">
                 <h2 className="mainUItitle">UI/UX Design</h2>
                 <p>
@@ -31,7 +31,6 @@ export default function UIUXSection() {
                 width={250}
                 height={100}
                 className="ilstU"
-                quality={100}
                 loading="lazy"
               />
             </div>

@@ -1,7 +1,6 @@
 import React from "react";
-import Link from "next/link";
 // import Spline from "@splinetool/react-spline";
-
+import Link from "next/link";
 const Footer = () => {
   return (
     <>

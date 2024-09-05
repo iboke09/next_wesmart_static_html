@@ -48,7 +48,7 @@ function ResponsiveMenu({ showMenu, toggleMenu }) {
           alt="Logo"
           width={180}
           height={100}
-          quality={100}
+          loading="eager"
         />
         <nav className="mt-12 responsivenav">
           <ul className="flex text-red-500 responsivenav">

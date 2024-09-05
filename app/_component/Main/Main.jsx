@@ -1,9 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import image from "/public/img/Frame.webp";
 import Link from "next/link";
-import Image from "next/image";
 
 const Main = () => {
   const text =
@@ -37,7 +35,7 @@ const Main = () => {
         className="centere"
         style={{ textAlign: "left", top: "65px", position: "relative" }}
       >
-        <p className="first">Boost Your Business</p>
+        <p className="first">Boost Business</p>
         <motion.h2 className="first1">with our expert services</motion.h2>
         <motion.p
           className="no"
@@ -74,7 +72,6 @@ const Main = () => {
           width={450}
           height={200}
           loading="eager"
-          // quality={100}
         />
       </div>
     </div>
