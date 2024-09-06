@@ -9,9 +9,10 @@ import ERPSection from "../_component/ERPSection/ERPSection.jsx";
 import Footer from "../_component/Footer/Footer";
 import UIUXSection from "../_component/UIUXSection/UIUXSection";
 
+
 export const metadata = {
-  title: "Services",
-};
+  title:'Services',
+}
 export default function Services() {
   return (
     <>
@@ -40,7 +41,6 @@ export default function Services() {
             </div>
             <div className="tawsitS" style={{ top: "30px" }}>
               <img
-                className="bozdu"
                 src={"/img/LandingPageVersion2.png"}
                 alt="alt"
                 width={450}

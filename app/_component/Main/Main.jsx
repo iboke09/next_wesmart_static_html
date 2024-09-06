@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const Main = () => {
   const text =
@@ -66,7 +67,7 @@ const Main = () => {
         </Link>
       </div>
       <div className="tawsit">
-        <img
+        <Image
           src="/img/Frame.webp"
           alt="alt"
           width={450}
