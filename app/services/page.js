@@ -8,11 +8,13 @@ import Landing from "../_component/Landing/Landing";
 import ERPSection from "../_component/ERPSection/ERPSection.jsx";
 import Footer from "../_component/Footer/Footer";
 import UIUXSection from "../_component/UIUXSection/UIUXSection";
-
+import LandingPageVersion2 from "../_component/Images_component/LandingPageVersion2/LandingPageVersion2";
+import { CldImage } from "next-cloudinary";
+import Vector from "../_component/Images_component/Vector/Vector";
 
 export const metadata = {
-  title:'Services',
-}
+  title: "Services",
+};
 export default function Services() {
   return (
     <>
@@ -30,23 +32,14 @@ export default function Services() {
                 <br /> and expertise. acilisis tortor malesuada malesuada.
               </p>
               <div
-                className="grid grid-cols-2 gap-6  top-20 relative gridS"
+                className="grid grid-cols-2 gap-6  top-20 relative gridS imagemuhassen "
                 style={{ columnGap: "0.5rem" }}
               >
-                <div className="of">ERP Systems</div>
-                <div className="act">Web Design</div>
-                <div className="of">Skada Systems</div>
-                <div className="act">UI/UX Design</div>
+                <Vector />
               </div>
             </div>
             <div className="tawsitS" style={{ top: "30px" }}>
-              <img
-                src={"/img/LandingPageVersion2.png"}
-                alt="alt"
-                width={450}
-                height={200}
-                loading="eager"
-              />
+              <LandingPageVersion2 />
             </div>
           </div>
         </Landing>

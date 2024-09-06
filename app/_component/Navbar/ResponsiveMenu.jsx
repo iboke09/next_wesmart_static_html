@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { VscFoldRight, VscFoldUp, VscChevronRight } from "react-icons/vsc";
 import { AiOutlineClose } from "react-icons/ai";
+import TheFinalOfDesigns from "../Images_component/TheFinalOfDesigns/TheFinalOfDesigns";
 function ResponsiveMenu({ showMenu, toggleMenu }) {
   return (
     <>
@@ -41,15 +42,8 @@ function ResponsiveMenu({ showMenu, toggleMenu }) {
             toggleMenu();
           }}
         />
-        <img
-          // style={{ height: "115px" }}
-          decoding="async"
-          src={"/img/TheFinalOfDesigns-02 (1).webp"}
-          alt="Logo"
-          width={180}
-          height={100}
-          loading="eager"
-        />
+        <TheFinalOfDesigns />
+
         <nav className="mt-12 responsivenav">
           <ul className="flex text-red-500 responsivenav">
             <li>

@@ -1,6 +1,7 @@
 import React from "react";
 // import Spline from "@splinetool/react-spline";
 import Link from "next/link";
+import TheFinalOfDesigns from "../Images_component/TheFinalOfDesigns/TheFinalOfDesigns";
 const Footer = () => {
   return (
     <>
@@ -8,14 +9,7 @@ const Footer = () => {
       <footer className="">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="flex justify-center text-teal-600 dark:text-teal-300">
-            <img
-              decoding="async"
-              src={"/img/TheFinalOfDesigns-02 (1).webp"}
-              alt="Logo"
-              width={140}
-              height={100}
-              loading="lazy"
-            />
+            <TheFinalOfDesigns />
           </div>
           <p
             className="mx-auto mt-6 max-w-md text-center leading-relaxed transition"
@@ -197,6 +191,6 @@ const Footer = () => {
       </footer>
     </>
   );
-}
+};
 
 export default Footer;

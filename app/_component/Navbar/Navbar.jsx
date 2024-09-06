@@ -5,6 +5,9 @@ import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { usePathname } from "next/navigation";
 import DarkMode from "../DarkMode/DarkMode";
+import { CldImage } from 'next-cloudinary';
+import TheFinalOfDesigns from "../Images_component/TheFinalOfDesigns/TheFinalOfDesigns";
+
 function Navbar({ active }) {
   const [showMenu, setShowMenu] = useState(false);
   const currentPath = usePathname();
@@ -27,15 +30,7 @@ function Navbar({ active }) {
       <header className="header">
         <div className="container shadow-2xl" style={{ height: "78px" }}>
           <Link href="/">
-            <img
-              decoding="async"
-              src={"/img/TheFinalOfDesigns-02 (1).webp"}
-              alt="Logo"
-              width={140}
-              height={100}
-              className="tazbit"
-              loading="eager"
-            />
+            <TheFinalOfDesigns/>
           </Link>
           <nav className="yami lg:block">
             <ul>

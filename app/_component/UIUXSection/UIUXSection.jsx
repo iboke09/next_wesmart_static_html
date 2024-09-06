@@ -1,3 +1,6 @@
+import UiUx from "../Images_component/UiUx/UiUx";
+import WebSectionIllustration_11zon from "../Images_component/WebSectionIllustration_11zon/WebSectionIllustration_11zon";
+
 export default function UIUXSection() {
   return (
     <>
@@ -15,7 +18,7 @@ export default function UIUXSection() {
         <div className="container UI">
           <div className="maskUI I">
             <div className="icermaskUI">
-              <img src={"/img/uiuxS.png"} alt="" width={280} height={100}  loading="lazy"/>
+              <UiUx/>
               <div className="boxUI">
                 <h2 className="mainUItitle">UI/UX Design</h2>
                 <p>
@@ -25,14 +28,7 @@ export default function UIUXSection() {
                   with your business goals and user needs.
                 </p>
               </div>
-              <img
-                src={"/img/WebSectionIllustration_11zon.png"}
-                alt="alt"
-                width={250}
-                height={100}
-                className="ilstU"
-                loading="lazy"
-              />
+              <WebSectionIllustration_11zon/>
             </div>
             <div className="icermaskUI">
               <div className="boxUI">

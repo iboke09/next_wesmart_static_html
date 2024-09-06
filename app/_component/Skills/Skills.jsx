@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FcSupport } from "react-icons/fc";
 import { SiCodesignal } from "react-icons/si";
+import { CldImage } from "next-cloudinary";
 const Skills = () => {
   return (
     <>
@@ -39,24 +40,24 @@ const Skills = () => {
           </div>
           <div className="mask" data-aos="fade-up">
             <h2 className="title">SAP CONSALTENT</h2>
-            <img
-              src={"/img/enterprise-resource-planning-holographic-interface_11zon.webp"}
+            <CldImage
+              src={"pcspzpb8zg4pxpththfd.jpg"}
               className="sapimg"
               width={200}
               height={200}
-              alt="sap"
+              alt="sap erp "
               loading="lazy"
             />
             <p className="text1">
               Maximize efficiency with our SAP solutions — we streamline
               operations and offer expert support.
             </p>
-            <img
-              src={"/img/abstract-background-with-low-poly-design_11zon.webp"}
+            <CldImage
+              src={"gvwerrzdhy0fhwqucjhd.jpg"}
               className="sapimg2"
               width={200}
               height={200}
-              alt="sap"
+              alt="sap erp"
               loading="lazy"
             />
             <p className="text2">
@@ -107,26 +108,25 @@ const Skills = () => {
               Captivate Your Audience with Innovative Graphic Designs
             </p>
           </div>
-          <img
-            src="https://github.githubassets.com/assets/shape-2-f30dcc9bd35c.svg"
+          <CldImage
+            src="h1bdgbt75tssifvirzvp.svg"
             style={{
               position: "absolute",
               left: "1300px",
               top: "165px",
               zIndex: "1",
-            
             }}
             className="kayip"
-            alt=""
+            alt="Sap and Erp"
             width={800}
             height={800}
             loading="lazy"
           />
-          <img
-            src={"/img/BusinessCard-19_11zon.webp"}
+          <CldImage
+            src={"mgbt5sjxtoyzhvhbdquv.png"}
             style={{ position: "absolute", left: "1300px", top: "165px" }}
             className="kayip1"
-            alt=""
+            alt="Web development"
             width={1200}
             height={1200}
             loading="lazy"
@@ -135,8 +135,8 @@ const Skills = () => {
             <h2 className="title ue" style={{ color: "#eb68b3 !important" }}>
               Graphic Design
             </h2>
-            <img
-              src={"/img/emily-bernal-BM3U_D2lygo-unsplash_11zon.webp"}
+            <CldImage
+              src={"odkervbvp6ozr9rxshdo.jpg"}
               className="sapimg"
               width={200}
               height={200}
@@ -147,10 +147,10 @@ const Skills = () => {
               Captivate with our graphic design — we bring your brand&apos;s
               vision to life with stunning visuals.
             </p>
-            <img
+            <CldImage
               // data-aos="fade-up"
               // data-aos-duration="1000"
-              src={"/img/kelly-sikkema-Dx1b5ucschA-unsplash_11zon.webp"}
+              src={"us2zyqrdlxtwr95ukm3j.jpg"}
               className="sapimg2"
               width={200}
               height={200}
@@ -196,33 +196,34 @@ const Skills = () => {
           </div>
           <div className="mask" data-aos="fade-up" data-aos-duration="1000">
             <h2 className="title">Web Development</h2>
-            <img
+            <CldImage
               // data-aos="fade-up"
               // data-aos-duration="1000"
-              src={"/img/jefferson-santos-9SoCnyQmkzI-unsplash_11zon.webp"}
+              src={"a7fl6cma1rzyqakxddua.jpg"}
               className="sapimg"
               width={200}
               height={200}
-              alt="sap"
+              alt="wesmartt"
               loading="lazy"
             />
             <p className="text1">
               We create attractive, fast websites that work on all devices,
               ensuring a smooth user experience.
             </p>
-            <img
+            <CldImage
               // data-aos="fade-up"
               // data-aos-duration="1000"
-              src={"/img/florian-olivo-4hbJ-eymZ1o-unsplash_11zon.webp"}
+              src={"idcmjs8tkoa4jhjdbzyv.jpg"}
               className="sapimg2"
               width={200}
               height={200}
-              alt="sap"
+              alt="wesmartt"
               loading="lazy"
             />
             <p className="text2">
-              We boost your best site’s visibility and performance with effective SEO
-              techniques to drive more traffic and improve rankings.
+              We boost your best site’s visibility and performance with
+              effective SEO techniques to drive more traffic and improve
+              rankings.
             </p>
           </div>
         </div>

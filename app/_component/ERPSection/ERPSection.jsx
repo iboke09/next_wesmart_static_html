@@ -1,3 +1,5 @@
+import ErpPgoto from '../Images_component/ErpPgoto/ErpPgoto'
+import ErpSectionIllustration_11zon from '../Images_component/ErpSectionIllustration_11zon/ErpSectionIllustration_11zon';
 const ERPSection = () => {
   return (
     <div className="theAPP"
@@ -25,7 +27,7 @@ const ERPSection = () => {
             <button className="ERPcontactBtn"><span style={{position:'relative',zIndex:'100'}}>Contact Us</span></button>
           </div>
           <div className="icermask">
-            <img src={"/img/ErpPgoto (1).png"} alt="alt" width={270} height={100} loading="lazy" />
+            <ErpPgoto />
             <div className="boxERP">
               <h2 className="mainERPtitle">Skada Systems</h2>
               <p>
@@ -35,7 +37,7 @@ const ERPSection = () => {
                 error, ut ratione temporibus? Cupiditate, explicabo.
               </p>
             </div>
-            <img src={"/img/ErpSectionIllustration_11zon.png"} alt="alt" width={250} height={100}  className="ilstE" loading="lazy"/>
+            <ErpSectionIllustration_11zon/>
           </div>
         </div>
       </div>

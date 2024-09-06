@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../_component/Footer/Footer";
 import Landing from "../_component/Landing/Landing";
 import AboutSection from "../_component/AboutSection/AboutSection";
+import SvgVector from "../_component/Images_component/SvgVector/SvgVector";
 
 export const metadata = {
   title: "About",
@@ -38,13 +39,7 @@ const About = () => {
             </div>
 
             <div className="tawsitS A" style={{ top: "-70px" }}>
-              <img
-                src={"/img/SvgVector 1.svg"}
-                alt="alt"
-                width={450}
-                height={200}
-                loading="eager"
-              />
+              <SvgVector/>
             </div>
           </div>
         </Landing>

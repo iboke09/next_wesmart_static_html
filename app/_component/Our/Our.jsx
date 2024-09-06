@@ -8,6 +8,10 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Loading from "@/app/loading";
+import IMG_0480 from "../Images_component/IMG_0480/IMG_0480";
+import V2 from "../Images_component/v2/v2";
+import V4 from "../Images_component/V4/V4";
+import V3 from "../Images_component/V3/V3";
 const Our = () => {
   useEffect(() => {
     AOS.init({
@@ -34,14 +38,7 @@ const Our = () => {
           >
             <Link href="/sales" id="sales">
               {" "}
-              <img
-                src={"/img/IMG_0480.webp"}
-                alt="Sap"
-                width={1000}
-                height={100}
-                className="abdullah"
-               loading="lazy"
-              />
+              <IMG_0480/>
             </Link>
 
             <div className="tutan">
@@ -90,7 +87,7 @@ const Our = () => {
               href="#developer"
               aria-label="Read more about the restoration of ancient artifacts in Egypt"
             >
-              <img src={"/img/v2.jpg.webp"} alt="" width={1000} height={100} loading="lazy"/>
+              <V2/>
             </Link>
 
             <div className="tutan">
@@ -140,7 +137,7 @@ const Our = () => {
               aria-label="Read more about the benefits of renewable energy sources"
             >
               {" "}
-              <img src={"/img/v4.jpg.webp"} width={1000} height={100} alt=""  loading="lazy"/>
+              <V4/>
             </Link>
             <div className="tutan">
               <h3 className="head">Adam Virland</h3>
@@ -188,7 +185,7 @@ const Our = () => {
               href="#site"
               aria-label="Read more about the evolution of the internet and its future"
             >
-              <img src={"/img/v3.jpg.webp"} width={1000} height={100} alt="" loading="lazy"/>
+              <V3/>
             </Link>
 
             <div className="tutan">

@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { CldImage } from 'next-cloudinary';
 
 const Main = () => {
   const text =
@@ -67,8 +68,8 @@ const Main = () => {
         </Link>
       </div>
       <div className="tawsit">
-        <Image
-          src="/img/Frame.webp"
+        <CldImage
+          src="uhbj9zixapjeb63zvnfj.png"
           alt="alt"
           width={450}
           height={200}
