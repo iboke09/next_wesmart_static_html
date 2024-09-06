@@ -60,9 +60,9 @@ const Contact = () => {
         <Landing className="olurmu">
           <div style={{ top: "110px", position: "relative" }} className="raf3">
             <section>
-              <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 inasha">
-                <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-                  <div className="relative h-64  rounded-lg sm:h-80 lg:order-last lg:h-full why1">
+            <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 inasha">
+                <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:gap-16">
+                  <div className="relative h-64  rounded-lg sm:h-80 order-last lg:h-full why1">
                     <div className="locals" style={{ position: "relative" }}>
                       <img src={"/img/ContactUsvector 1.svg"} alt="Sap" width={1000} height={100} loading="eager"/>
                     </div>
