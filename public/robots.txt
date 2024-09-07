@@ -1,7 +1,8 @@
 # *
 User-agent: *
 Allow: /
-
+Disallow: /_next-videos/Technology.mp4
+Disallow: /404
 # Host
 Host: https://www.example.com
 
