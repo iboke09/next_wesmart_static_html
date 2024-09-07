@@ -21,7 +21,6 @@ const Our = () => {
   return (
     <>
       <div className="meet" id="meet">
-        {/* <Suspense fallback={<Loading/>}> */}
         <div
           className="tutan main-title"
           data-aos="fade-up"
@@ -225,10 +224,6 @@ const Our = () => {
             </div>
           </div>
         </div>
-        {/* <div style={{}} className="maskoy"></div>
-          <div></div>
-          <div></div> */}
-        {/* </Suspense> */}
       </div>
     </>
   );

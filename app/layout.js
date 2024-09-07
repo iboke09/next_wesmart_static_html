@@ -18,7 +18,6 @@ const lato = Lato({
 });
 export const metadata = {
   title: {
-    // default: "Wesmart For Technology",
     template: "%s - Wesmart For Technology",
   },
   description:
@@ -84,7 +83,6 @@ export default function RootLayout({ children }) {
         <link rel="prefetch" href="/contact" />
         <link rel="prefetch" href="/" />
       </head>
-      {/* <link rel="icon" type="icon" href="./favicon.png"/> */}
       <body className={lato.variable}>
         <Navbar />
         {children}
@@ -92,6 +90,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
-// This is the root layout component for your Next.js app.
-// Learn more: https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#root-layout-required

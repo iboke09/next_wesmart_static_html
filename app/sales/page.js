@@ -3,6 +3,7 @@ import Navbar from "../_component/Navbar/Navbar";
 import { color } from "framer-motion";
 import Link from "next/link";
 import Loading from "../loading";
+import SalesImg from "../_component/Images_component/SalesImg/SalesImg";
 export const metadata = {
   title: "Sales",
 };
@@ -100,20 +101,10 @@ export default function Sales() {
               style={{ display: "flex", justifyContent: "center" }}
             >
               <Suspense fallback={<Loading />}>
-                <img
-                  className="sura"
-                  alt={"Sap"}
-                  src={"/img/IMG_0455.webp"}
-                  width={400}
-                  height={400}
-                  style={{
-                    borderRadius: "0px 67px",
-                  }}
-                  loading="eager"
-                />
+                <SalesImg/>
               </Suspense>
             </div>
-            <div
+            <div  
               className=""
               style={{
                 display: "flex",
@@ -135,7 +126,6 @@ export default function Sales() {
                   style={{
                     fontSize: "25px",
                     padding: "10px 0",
-                    // width: "50%",
                     lineHeight: "34px",
                   }}
                 >
@@ -147,7 +137,6 @@ export default function Sales() {
                     borderTop: "1px solid var(--agib2-color)",
                     fontSize: "15px",
                     padding: "5px 0",
-                    // width: "50%",
                     lineHeight: "34px",
                   }}
                 >

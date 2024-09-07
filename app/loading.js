@@ -13,6 +13,7 @@ export default function Loading() {
         top: "0",
         backgroundColor: "var(--main-alt-color1)",
         zIndex: "",
+        transition:'0.7s'
       }}
     >
       <div className="spinner">
