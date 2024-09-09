@@ -5,6 +5,7 @@ import { CldImage } from "next-cloudinary";
 function LandingPageVersion2() {
   return (
     <CldImage
+    className="bozdu"
       src={"scmimnta4euohimnwwwy.png"}
       alt="Web Development in wesmartt"
       width={450}

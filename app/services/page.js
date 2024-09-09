@@ -18,7 +18,7 @@ export const metadata = {
 export default function Services() {
   return (
     <>
-      <>
+      <div className="servicesLanding">
         <Landing>
           <div className="textS container">
             <div
@@ -47,7 +47,7 @@ export default function Services() {
         <UIUXSection />
         <Tagarob1 />
         <Footer />
-      </>
+      </div>
     </>
   );
 }

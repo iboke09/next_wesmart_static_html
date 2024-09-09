@@ -25,7 +25,6 @@ function ResponsiveMenu({ showMenu, toggleMenu }) {
       ></div>
       <div
         style={{
-          color: "#609521",
           zIndex: "999",
           backgroundColor: "rgb(17 47 96)",
           height: "100vh",

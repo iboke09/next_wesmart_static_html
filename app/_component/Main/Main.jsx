@@ -67,13 +67,14 @@ const Main = () => {
           learn more 
         </Link>
       </div>
-      <div className="tawsit">
+      <div className="tawsit frameBack">
         <CldImage
           src="uhbj9zixapjeb63zvnfj.png"
           alt="alt"
           width={450}
           height={200}
           loading="eager"
+          
         />
       </div>
     </div>

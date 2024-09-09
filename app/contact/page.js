@@ -59,7 +59,7 @@ const Contact = () => {
       <title>Contact - Wesmart For Technology</title>
       <div className="contactP">
         <Landing className="olurmu">
-          <div style={{ top: "110px", position: "relative" }} className="raf3">
+          <div style={{ top: "120px", position: "relative" }} className="raf3">
             <section>
               <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 inasha">
                 <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:gap-16">

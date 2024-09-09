@@ -11,7 +11,7 @@ function TheFinalOfDesigns() {
       alt="wesmartt for sap and ERP systems"
       width={140}
       height={100}
-      loading="lazy"
+      loading="eager"
     />
   );
 }

@@ -33,7 +33,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://wesmartt.com/images/opengraph-image.jpg",
+        url: "https://res.cloudinary.com/detcvepoj/image/upload/v1725698812/vza8nsez27dvm8i2m7hq.jpg",
         alt: "Sap and all web development services",
       },
     ],
@@ -44,7 +44,8 @@ export const metadata = {
     title: "With WeSmart Innovate Beyond Limits",
     description:
       "We offer innovative SAP solutions, top-notch website and store designs with the fastest performance, and exceptional UI/UX services for user experience.",
-    image: "https://wesmartt.com/opengraph-image.jpg",
+    image:
+      "https://res.cloudinary.com/detcvepoj/image/upload/v1725698812/vza8nsez27dvm8i2m7hq.jpg",
   },
   additionalMetaTags: [
     {
@@ -63,7 +64,7 @@ export const metadata = {
         "@type": "Organization",
         "name": "Wesmart For Technology",
         "url": "https://wesmartt.com",
-        "logo": "https://wesmartt.com/images/opengraph-image.jpg",
+        "logo": "https://res.cloudinary.com/detcvepoj/image/upload/v1725698812/vza8nsez27dvm8i2m7hq.jpg",
         "sameAs": [
           "https://www.facebook.com/wesmartt",
           "https://www.twitter.com/wesmartt"

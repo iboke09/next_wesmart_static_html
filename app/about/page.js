@@ -39,7 +39,7 @@ const About = () => {
               </a>
             </div>
 
-            <div className="tawsitS A" style={{ top: "-70px" }}>
+            <div className="tawsitS A" style={{ top: "-95px" }}>
               <SvgVector />
             </div>
           </div>
@@ -49,7 +49,7 @@ const About = () => {
             style={{
               color: "#3d72b9",
               margin: "auto",
-              top: "-80px",
+              top: "-85px",
               position: "relative",
               fontSize: "45px",
               animation: "bouncing 1.5s infinite",
