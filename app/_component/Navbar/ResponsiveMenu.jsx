@@ -73,6 +73,7 @@ function ResponsiveMenu({ showMenu, toggleMenu }) {
                 href="/about"
                 onClick={() => {
                   toggleMenu();
+                  
                 }}
               >
                 <VscChevronRight />

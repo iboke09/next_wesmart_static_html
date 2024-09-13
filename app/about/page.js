@@ -43,7 +43,7 @@ const About = () => {
               <SvgVector />
             </div>
           </div>
-        </Landing>
+        </Landing>  
         <Link href="#aboutUs">
           <FaAngleDoubleDown
             style={{
