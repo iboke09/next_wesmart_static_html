@@ -1,0 +1,37 @@
+{
+    "en": {
+      "metadata": {
+        "title": "With WeSmart Innovate Beyond Limits",
+        "description": "We offer innovative SAP solutions, top-notch website and store designs with the fastest performance, and exceptional UI/UX services for user experience.",
+        "keywords": "Sap Consultant, SEO, Web Development, UI/UX design, All web services, erp, websites, graphic design, We offer innovative SAP solutions, top-notch website and store designs with the fastest performance, and exceptional UI/UX services for user experience.",
+        "ogAlt": "Sap and all web development services",
+        "siteName": "Wesmart Company Site"
+      },
+      "ServicesPage":{
+        "services_title_meta":"Services - Wesmart For Technology",
+        "about":"We provide SAP, ERP systems, UI/UX design, and web development services. Our innovative and efficient solutions are tailored to meet your business needs and deliver outstanding results."
+      },
+      "AboutPage":{
+        "about_title_meta":"About - Wesmart For Technology",
+        "about":"Learn about our journey, mission, and expertise. We are dedicated to delivering innovative solutions in SAP, ERP systems, UI/UX design, and web development."
+      }
+    },
+    "tr": {
+      "metadata": {
+        "title": "WeSmart ile Sınırların Ötesine Geçin",
+        "description": "Yenilikçi SAP çözümleri, hızlı performanslı en iyi web sitesi ve mağaza tasarımları ile mükemmel kullanıcı deneyimi hizmetleri sunuyoruz.",
+        "keywords": "Sap Danışmanı, SEO, Web Geliştirme, UI/UX tasarımı, Tüm web hizmetleri, erp, web siteleri, grafik tasarımı, Yenilikçi SAP çözümleri, hızlı performanslı en iyi web sitesi ve mağaza tasarımları ile mükemmel kullanıcı deneyimi hizmetleri sunuyoruz.",
+        "ogAlt": "SAP ve tüm web geliştirme hizmetleri",
+        "siteName": "Wesmart Şirket Sitesi"
+      },
+      "ServicesPage":{
+        "services_title_meta":"Hizmetlerimiz - Teknoloji İçin Wesmart",
+        "about":"ERP, SAP, UI/UX tasarımı ve web geliştirme hizmetleri sunuyoruz. Yenilikçi ve verimli çözümlerle iş ihtiyaçlarınızı karşılıyor ve en iyi sonuçları sağlıyoruz."
+      },
+      "AboutPage":{
+        "about_title_meta":"Hakkımızda - Teknoloji İçin Wesmart",
+        "about":"Hikayemizi, misyonumuzu ve uzmanlığımızı keşfedin. SAP, ERP sistemleri, UI/UX tasarımı ve web geliştirme alanlarında yenilikçi çözümler sunuyoruz."
+      }
+    }
+  }
+  
