@@ -11,6 +11,7 @@ import { useTranslations } from 'next-intl';
 import {setRequestLocale} from 'next-intl/server';
 import LastProject from "./_component/LastProject/LastProject";
 import Parallex from './_component/Parallex/Parallex'
+import CompareDemo from "./_component/CompareDemo/CompareDemo";
 export const metadata = {
   title: "Home",
 };
@@ -33,6 +34,7 @@ export default function Home({params}) {
       <Incaz />
       <LastProject/>
       <Parallex/>
+      <CompareDemo/>
       <Spliden />
       <Footer />
       {/* <Tacarob/> */}
