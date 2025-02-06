@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { CldImage } from "next-cloudinary";
+import { useTranslations } from "next-intl";
 
 export const HeroParallax = ({
   products
@@ -60,16 +61,15 @@ export const HeroParallax = ({
 };
 
 export const Header = () => {
+  const t = useTranslations('HomePage');
   return (
     (<div
       className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold siyahbeyaz">
-        The Ultimate <br /> development studio
+        {t('our_last4')} <br /> {t('our_last5')}
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 siyahbeyaz">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+        {t('our_last6')}
       </p>
     </div>)
   );

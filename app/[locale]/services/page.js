@@ -10,7 +10,7 @@ import LandingPageVersion2 from "../_component/Images_component/LandingPageVersi
 import Vector from "../_component/Images_component/Vector/Vector";
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
-
+import Tumservices from '../_component/Tumservices/Tumservices.jsx'
 import translations from "../translate.json";
 
 
@@ -52,10 +52,13 @@ export default function Services({ params: { locale } }) {
             </div>
           </div>
         </Landing>
+        <Tumservices/>
         <ERPSection />
         <UIUXSection />
         <Tagarob1 />
+        <div className="footer-services">
         <Footer />
+        </div>
       </div>
     </>
   );

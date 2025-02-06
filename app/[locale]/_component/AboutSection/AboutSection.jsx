@@ -6,7 +6,7 @@ import AboutERPNT from "../Images_component/AboutERPNT/AboutERPNT";
 export default function AboutSection() {
   return (
     <>
-      <div className="container" style={{ margin: "-249px auto 200px auto" }}>
+      <div className="container about_sec" style={{ margin: "-249px auto 200px auto" }}>
         <div>
           <div
             style={{ width: "166px", height: "149px" }}
@@ -16,6 +16,7 @@ export default function AboutSection() {
           </div>
         </div>
         <div>
+          <div  id="about_details" style={{position:'relative',top:'-50px'}}></div>
           <div
             style={{ width: "166px", height: "149px" }}
             className="abouterpIT"

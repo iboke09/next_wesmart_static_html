@@ -3,11 +3,11 @@ import React, { Suspense } from "react";
 import { FaFacebook } from "react-icons/fa6";
 import { FaYoutube, FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
-import { Link } from "@/i18n/routing";
+import { Link } from "../../../../i18n/routing";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Loading from "@/app/[locale]/loading";
+
 import IMG_0480 from "../Images_component/IMG_0480/IMG_0480";
 import V2 from "../Images_component/v2/v2";
 import V4 from "../Images_component/V4/V4";

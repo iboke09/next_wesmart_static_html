@@ -5,7 +5,7 @@ import ResponsiveMenu from "./ResponsiveMenu";
 import DarkMode from "../DarkMode/DarkMode";
 import { CldImage } from "next-cloudinary";
 import TheFinalOfDesigns from "../Images_component/TheFinalOfDesigns/TheFinalOfDesigns";
-import { Link } from "@/i18n/routing";
+import { Link } from "../../../../i18n/routing";
 import { FiGlobe, FiCheck } from "react-icons/fi";
 import { useRouter, usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
@@ -42,25 +42,44 @@ function Navbar({ active }) {
     setIsOpen(!isOpen);
   };
 
-  const selectLanguage = (language) => {
-    const newLocale = language === "English" ? "en" : "tr";
-    const segments = pathname.split("/").filter(Boolean);
+  // const selectLanguage = (language) => {
+  //   const newLocale = language === "English" ? "en" : "tr";
+  //   const segments = pathname.split("/").filter(Boolean);
 
-    if (segments[0] === "en" || segments[0] === "tr") {
+  //   if (segments[0] === "en" || segments[0] === "tr") {
+  //     segments[0] = newLocale;
+  //   } else {
+  //     segments.unshift(newLocale);
+  //   }
+
+  //   const newPath = `/${segments.join("/")}`;
+  //   router.push(newPath);
+  // };
+
+  // useEffect(() => {
+  //   const currentLanguage = pathname.startsWith("/tr") ? "Turkish" : "English";
+  //   setSelectedLanguage(currentLanguage);
+  // }, [pathname]);
+  const selectLanguage = (language) => {
+    const newLocale = language === "English" ? "en" : language === "Turkish" ? "tr" : "ar";
+    const segments = pathname.split("/").filter(Boolean);
+  
+    if (["en", "tr", "ar"].includes(segments[0])) {
       segments[0] = newLocale;
     } else {
       segments.unshift(newLocale);
     }
-
+  
     const newPath = `/${segments.join("/")}`;
     router.push(newPath);
   };
-
+  
   useEffect(() => {
-    const currentLanguage = pathname.startsWith("/tr") ? "Turkish" : "English";
+    const firstSegment = pathname.split("/")[1];
+    const currentLanguage = firstSegment === "tr" ? "Turkish" : firstSegment === "ar" ? "Arabic" : "English";
     setSelectedLanguage(currentLanguage);
   }, [pathname]);
-
+  
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -133,6 +152,13 @@ function Navbar({ active }) {
                         {selectedLanguage === "Turkish" && <FiCheck size={16} className="text-black mr-2" />}
                         Turkish
                       </li>
+                      <li
+                        onClick={() => selectLanguage("Arabic")}
+                        className={`flex items-center py-2 px-3 rounded-md cursor-pointer transition-colors ${selectedLanguage === "Arabic" ? "bg-blue-600 text-white font-bold" : "hover:bg-blue-600"}`}
+                      >
+                        {selectedLanguage === "Arabic" && <FiCheck size={16} className="text-black mr-2" />}
+                        Arabic
+                      </li>
                     </ul>
                   </div>
                 )}
@@ -180,6 +206,13 @@ function Navbar({ active }) {
                       className={`flex items-center py-2 px-3 rounded-md cursor-pointer transition-colors ${selectedLanguage === "Turkish" ? "bg-blue-600 text-white font-bold" : "hover:bg-blue-600"}`}
                     >
                       {selectedLanguage === "Turkish" && <FiCheck size={16} className="text-black mr-2" />}
+                      Turkish
+                    </li>
+                    <li
+                      onClick={() => selectLanguage("Arabic")}
+                      className={`flex items-center py-2 px-3 rounded-md cursor-pointer transition-colors ${selectedLanguage === "Arabic" ? "bg-blue-600 text-white font-bold" : "hover:bg-blue-600"}`}
+                    >
+                      {selectedLanguage === "Arabic" && <FiCheck size={16} className="text-black mr-2" />}
                       Turkish
                     </li>
                   </ul>

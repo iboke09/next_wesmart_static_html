@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import {Link} from '@/i18n/routing';
+import {Link} from '../../../../i18n/routing';
 import { VscFoldRight, VscFoldUp, VscChevronRight } from "react-icons/vsc";
 import { AiOutlineClose } from "react-icons/ai";
 import TheFinalOfDesigns from "../Images_component/TheFinalOfDesigns/TheFinalOfDesigns";
@@ -19,16 +19,23 @@ function ResponsiveMenu({ showMenu, toggleMenu }) {
           width: "100%",
           height: "100vh",
           // background: "rgba(0, 0, 0, 0.5)",
+          background: '#0000003b',
           zIndex: "10000",
           transition: "0.5s",
         }}
       ></div>
       <div
         style={{
-          zIndex: "999",
-          backgroundColor: "rgb(17 47 96)",
+          // zIndex: "999",
+          // backgroundColor: "rgb(17 47 96)",
+          // height: "100vh",
+          // zIndex: "10002",
+          zIndex: '10002',
+          boxShadow: "0px 0px 3px #ffffffb8",
           height: "100vh",
-          zIndex: "10002",
+          background: "rgb(15, 49, 92)",
+          background: "linear-gradient(56deg, rgba(15, 49, 92, 1) 0%, rgb(0 0 0) 100%)",
+      
         }}
         className={`${
           showMenu ? "left-0 " : "-left-[100%]  "
@@ -59,7 +66,7 @@ function ResponsiveMenu({ showMenu, toggleMenu }) {
             </li>
             <li>
               <Link
-                href="/services"
+                href="/services/#landingo"
                 onClick={() => {
                   toggleMenu();
                 }}

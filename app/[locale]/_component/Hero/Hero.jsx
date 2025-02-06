@@ -1,111 +1,3 @@
-// "use client";
-// import React from "react";
-// import {
-//   // FcCircuit,
-//   // FcFaq,
-//   // FcBullish,
-//   // FcBarChart,
-//   FcCamcorderPro,
-//   FcAbout,
-//   FcImageFile
-// } from "react-icons/fc";
-// import "aos/dist/aos.css";
-// import styles from "./Hero.module.css";
-// import Tilt from "react-vanilla-tilt";
-// import { motion } from "framer-motion";
-// import "animate.css";
-// import { useTranslations } from "next-intl";
-// import Link from "next/link";
-// const Hero = () => {
-//   const t = useTranslations("HomePage");
-//   return (
-//     <>
-//       <div className="our">
-//         <div className="tutan main-title">
-//           <h2>{t("our")}</h2>
-//           <h1>our major causes</h1>
-//         </div>
-//         <div className="container">
-//           <Tilt className={styles.hal}>
-//             <motion.div
-//               className="box"
-//               data-tilt
-//               data-tilt-glare
-//               data-tilt-max-glare="1.8"
-//             >
-//               <FcAbout className={styles.svgi} />
-//               <h2 className={styles.children}>{t("sap_s")}</h2>
-//               <p className={styles.children}>{t("title1")}</p>
-//             </motion.div>
-//             <Link href={'#sap'}>
-//               <button className="buttonda">
-//                 More Info
-//                 <svg className="iconda" viewBox="0 0 24 24" fill="currentColor">
-//                   <path
-//                     fillRule="evenodd"
-//                     d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-//                     clipRule="evenodd"
-//                   ></path>
-//                 </svg>
-//               </button>
-//             </Link>
-//           </Tilt>
-//           <Tilt className={styles.hal}>
-//             <motion.div
-//               className="box"
-//               data-tilt
-//               data-tilt-glare
-//               data-tilt-max-glare="1.8"
-//             >
-//               <FcCamcorderPro className={styles.svgi} />
-//               <h2 className={styles.children}>{t("web")}</h2>
-//               <p className={styles.children}>{t("title2")}</p>
-//             </motion.div>
-//             <Link href={'#web_develop'}>
-//               <button className="buttonda">
-//                 More Info
-//                 <svg className="iconda" viewBox="0 0 24 24" fill="currentColor">
-//                   <path
-//                     fillRule="evenodd"
-//                     d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-//                     clipRule="evenodd"
-//                   ></path>
-//                 </svg>
-//               </button>
-//             </Link>
-//           </Tilt>
-//           <Tilt className={styles.hal}>
-//             <motion.div
-//               className="box"
-//               data-tilt
-//               data-tilt-glare
-//               data-tilt-max-glare="1.8"
-//             >
-//               <FcImageFile  className={styles.svgi} />
-//               <h2 className={styles.children}>{t("design")}</h2>
-//               <p className={styles.children}>{t("title3")}</p>
-//             </motion.div>
-//             <Link href={'#graphic_design'}>
-//               <button className="buttonda">
-//                 More Info
-//                 <svg className="iconda" viewBox="0 0 24 24" fill="currentColor">
-//                   <path
-//                     fillRule="evenodd"
-//                     d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-//                     clipRule="evenodd"
-//                   ></path>
-//                 </svg>
-//               </button>
-//             </Link>
-//           </Tilt>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Hero;
-
 "use client";
 import React from "react";
 import {
@@ -123,8 +15,8 @@ import Tilt from "react-vanilla-tilt";
 import { motion } from "framer-motion";
 import "animate.css";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
+import { Link } from "../../../../i18n/routing";
 const Hero = () => {
   const t = useTranslations("HomePage");
   return (
@@ -132,7 +24,7 @@ const Hero = () => {
       <div className="our">
         <div className="tutan main-title">
           <h2>{t("our")}</h2>
-          <h1>our major causes</h1>
+          <h1>{t("spliden_head")}</h1>
         </div>
         <div className="container">
           <Tilt className={`${styles.hal} ikincidiv`}>
@@ -143,14 +35,39 @@ const Hero = () => {
               data-tilt-max-glare="1.8"
             >
               {/* <FcAbout className={styles.svgi} /> */}
-              <h2 className={styles.children}>{t("sap_s")}</h2>
-              <p className={styles.children}>{t("title1")}</p>
-              <a href="#" className={`buttonlast ${styles.children}`}>
-                Visit Website
+              <h2 className={styles.children}>
+                {t("sap_s")}{" "}
+                <span>
+                  <svg
+                    width="41"
+                    height="40"
+                    viewBox="0 0 41 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.335 3.70606C7.36485 1.54178 4.17874 0.659509 2.43312 2.40513C0.446233 4.39201 1.86544 8.24751 4.70857 15.9538L9.45581 28.8449C10.8797 32.7075 11.5917 34.64 13.1576 34.9853C14.7234 35.3306 16.1781 33.8736 19.0898 30.9595L21.9353 28.1164L31.25 37.4311C32.2151 38.3961 32.6976 38.8786 33.2369 39.101C33.9536 39.3967 34.7578 39.3967 35.4769 39.101C36.0138 38.8786 36.4964 38.3961 37.4614 37.4311C38.4265 36.466 38.909 35.9835 39.1313 35.4442C39.4277 34.7269 39.4277 33.9215 39.1313 33.2042C38.909 32.6673 38.4265 32.1871 37.4614 31.2197L28.1467 21.905L30.9898 19.0595C33.9039 16.1501 35.3586 14.6931 35.0157 13.1272C34.6727 11.5614 32.7378 10.8494 28.8752 9.42545L22.7963 7.18784"
+                      stroke="white"
+                      strokeWidth="1.35166"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </h2>
+              <p className={styles.children}>{t("title1")} </p>
+              <Link
+                href="/services/#maskUII"
+                className={`buttonlast ${styles.children}`}
+              >
+                {t("view_more")}
                 <div className="iconlast">
                   <MdArrowOutward />
                 </div>
-              </a>
+              </Link>
+              <div className="heroblur ilkolanblur">
+                <span></span>
+              </div>
             </motion.div>
             {/* <Link href={"#sap"}>
               <button className="buttonda">
@@ -165,7 +82,7 @@ const Hero = () => {
               </button>
             </Link> */}
           </Tilt>
-          <Tilt  className={`${styles.hal} ikincidiv`}>
+          <Tilt className={`${styles.hal} ikincidiv`}>
             <motion.div
               className="box"
               data-tilt
@@ -173,29 +90,49 @@ const Hero = () => {
               data-tilt-max-glare="1.8"
             >
               {/* <FcCamcorderPro className={styles.svgi} /> */}
-              <h2 className={styles.children}>{t("web")}</h2>
+              <h2 className={styles.children}>
+                {t("web")}{" "}
+                <span>
+                  <svg
+                    width="48"
+                    height="49"
+                    viewBox="0 0 48 49"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.1651 30.7191C27.6545 30.7191 30.4833 27.8904 30.4833 24.4009C30.4833 20.9115 27.6545 18.0828 24.1651 18.0828C20.6757 18.0828 17.8469 20.9115 17.8469 24.4009C17.8469 27.8904 20.6757 30.7191 24.1651 30.7191Z"
+                      stroke="white"
+                      strokeWidth="1.35166"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M39.7499 30.7191C39.4695 31.3543 39.3859 32.0589 39.5098 32.7421C39.6337 33.4253 39.9594 34.0558 40.4449 34.5521L40.5712 34.6785C40.9629 35.0697 41.2735 35.5342 41.4855 36.0455C41.6975 36.5569 41.8066 37.105 41.8066 37.6585C41.8066 38.2121 41.6975 38.7602 41.4855 39.2715C41.2735 39.7829 40.9629 40.2474 40.5712 40.6386C40.18 41.0302 39.7155 41.3409 39.2042 41.5529C38.6928 41.7648 38.1447 41.8739 37.5912 41.8739C37.0376 41.8739 36.4895 41.7648 35.9782 41.5529C35.4669 41.3409 35.0023 41.0302 34.6111 40.6386L34.4847 40.5122C33.9884 40.0267 33.358 39.701 32.6748 39.5771C31.9916 39.4533 31.287 39.5369 30.6517 39.8172C30.0288 40.0842 29.4976 40.5275 29.1234 41.0925C28.7492 41.6576 28.5484 42.3197 28.5457 42.9974V43.3554C28.5457 44.4725 28.1019 45.5439 27.312 46.3338C26.5221 47.1237 25.4507 47.5675 24.3336 47.5675C23.2165 47.5675 22.1451 47.1237 21.3552 46.3338C20.5653 45.5439 20.1215 44.4725 20.1215 43.3554V43.1659C20.1052 42.4688 19.8795 41.7927 19.4739 41.2256C19.0682 40.6584 18.5014 40.2264 17.8469 39.9857C17.2117 39.7054 16.5071 39.6217 15.8239 39.7456C15.1407 39.8695 14.5103 40.1952 14.0139 40.6807L13.8876 40.8071C13.4964 41.1987 13.0318 41.5094 12.5205 41.7214C12.0091 41.9333 11.461 42.0424 10.9075 42.0424C10.354 42.0424 9.80586 41.9333 9.29452 41.7214C8.78318 41.5094 8.31863 41.1987 7.92744 40.8071C7.53582 40.4159 7.22514 39.9513 7.01317 39.44C6.80119 38.9287 6.69209 38.3806 6.69209 37.827C6.69209 37.2735 6.80119 36.7254 7.01317 36.214C7.22514 35.7027 7.53582 35.2381 7.92744 34.847L8.05381 34.7206C8.53933 34.2242 8.86503 33.5938 8.9889 32.9106C9.11278 32.2274 9.02915 31.5228 8.7488 30.8876C8.48183 30.2647 8.03855 29.7334 7.47352 29.3592C6.90848 28.985 6.24637 28.7842 5.56867 28.7815H5.21064C4.09352 28.7815 3.02215 28.3377 2.23223 27.5478C1.44231 26.7579 0.998535 25.6865 0.998535 24.5694C0.998535 23.4523 1.44231 22.3809 2.23223 21.591C3.02215 20.8011 4.09352 20.3573 5.21064 20.3573H5.40018C6.09727 20.341 6.77334 20.1154 7.34049 19.7097C7.90763 19.3041 8.33963 18.7372 8.58032 18.0828C8.86067 17.4476 8.94429 16.7429 8.82042 16.0597C8.69654 15.3765 8.37084 14.7461 7.88532 14.2498L7.75896 14.1234C7.36733 13.7322 7.05665 13.2677 6.84468 12.7563C6.63271 12.245 6.52361 11.6969 6.52361 11.1433C6.52361 10.5898 6.63271 10.0417 6.84468 9.53036C7.05665 9.01902 7.36733 8.55447 7.75896 8.16328C8.15015 7.77166 8.6147 7.46098 9.12604 7.24901C9.63738 7.03703 10.1855 6.92793 10.739 6.92793C11.2926 6.92793 11.8407 7.03703 12.352 7.24901C12.8633 7.46098 13.3279 7.77166 13.7191 8.16328L13.8454 8.28965C14.3418 8.77517 14.9722 9.10087 15.6554 9.22474C16.3386 9.34862 17.0432 9.26499 17.6785 8.98464H17.8469C18.4698 8.71767 19.0011 8.27439 19.3753 7.70936C19.7495 7.14432 19.9503 6.48221 19.953 5.80451V5.44648C19.953 4.32936 20.3968 3.25799 21.1867 2.46807C21.9766 1.67815 23.048 1.23438 24.1651 1.23438C25.2822 1.23438 26.3536 1.67815 27.1435 2.46807C27.9334 3.25799 28.3772 4.32936 28.3772 5.44648V5.63602C28.3799 6.31372 28.5807 6.97584 28.9549 7.54087C29.3291 8.10591 29.8603 8.54919 30.4833 8.81616C31.1185 9.09651 31.8231 9.18013 32.5063 9.05626C33.1895 8.93238 33.8199 8.60668 34.3163 8.12116L34.4426 7.9948C34.8338 7.60317 35.2984 7.29249 35.8097 7.08052C36.321 6.86855 36.8692 6.75945 37.4227 6.75945C37.9762 6.75945 38.5243 6.86855 39.0357 7.08052C39.547 7.29249 40.0116 7.60317 40.4028 7.9948C40.7944 8.38599 41.1051 8.85054 41.317 9.36188C41.529 9.87322 41.6381 10.4213 41.6381 10.9749C41.6381 11.5284 41.529 12.0765 41.317 12.5878C41.1051 13.0992 40.7944 13.5637 40.4028 13.9549L40.2764 14.0813C39.7909 14.5776 39.4652 15.2081 39.3413 15.8913C39.2174 16.5744 39.301 17.2791 39.5814 17.9143V18.0828C39.8484 18.7057 40.2916 19.2369 40.8567 19.6111C41.4217 19.9853 42.0838 20.1861 42.7615 20.1888H43.1196C44.2367 20.1888 45.308 20.6326 46.098 21.4225C46.8879 22.2125 47.3317 23.2838 47.3317 24.4009C47.3317 25.5181 46.8879 26.5894 46.098 27.3793C45.308 28.1693 44.2367 28.613 43.1196 28.613H42.93C42.2523 28.6157 41.5902 28.8166 41.0252 29.1907C40.4601 29.5649 40.0168 30.0962 39.7499 30.7191Z"
+                      stroke="white"
+                      strokeWidth="1.35166"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </h2>
               <p className={styles.children}>{t("title2")}</p>
-              <a href="#" className={`buttonlast ${styles.children}`} >
-                Visit Website
+              <Link
+                href="/services/#maskERPP"
+                className={`buttonlast ${styles.children}`}
+              >
+                {t("view_more")}
                 <div className="iconlast">
                   <MdArrowOutward />
                 </div>
-              </a>
+              </Link>
+              <div className="heroblur ikinciolanblur">
+                <span></span>
+              </div>
             </motion.div>
-            {/* <Link href={"#web_develop"}>
-              <button className="buttonda">
-                More Info
-                <svg className="iconda" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    fillRule="evenodd"
-                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </Link> */}
           </Tilt>
-          <Tilt  className={`${styles.hal} ikincidiv`}>
+          <Tilt className={`${styles.hal} ikincidiv`}>
             <motion.div
               className="box"
               data-tilt
@@ -203,14 +140,43 @@ const Hero = () => {
               data-tilt-max-glare="1.8"
             >
               {/* <FcImageFile className={styles.svgi} /> */}
-              <h2 className={styles.children}>{t("design")}</h2>
+              <h2 className={styles.children}>
+                {t("design")}{" "}
+                <span>
+                  <svg
+                    width="50"
+                    height="48"
+                    viewBox="0 0 50 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.60449 31.0423H11.8705C13.712 31.0423 14.6351 31.0423 15.4106 31.449C16.1884 31.858 16.6991 32.6094 17.7206 34.1122L18.0955 34.6637C19.0842 36.1182 19.5785 36.8466 20.2509 36.8075C20.921 36.7685 21.3263 35.9895 22.1323 34.427L26.7384 25.5183C27.5795 23.8961 27.9989 23.0826 28.6853 23.0573C29.3718 23.0298 29.8568 23.8064 30.8267 25.3575L32.3191 27.7472C33.3266 29.358 33.8279 30.1622 34.6269 30.6034C35.4281 31.04 36.3887 31.04 38.3122 31.04H41.4048"
+                      stroke="white"
+                      strokeWidth="1.35166"
+                      strokeLinecap="round"
+                    />
+                    <path
+                      d="M1.57617 24.1501C1.57617 13.3182 1.57617 7.9022 5.00615 4.53589C8.44081 1.17188 13.9606 1.17188 25.005 1.17188C36.0493 1.17188 41.5715 1.17188 45.0014 4.53589C48.4338 7.9045 48.4338 13.3182 48.4338 24.1501C48.4338 34.9821 48.4338 40.398 45.0014 43.762C41.5738 47.1284 36.0493 47.1284 25.005 47.1284C13.9606 47.1284 8.43847 47.1284 5.00615 43.762C1.57617 40.4003 1.57617 34.9821 1.57617 24.1501Z"
+                      stroke="white"
+                      strokeWidth="1.35166"
+                    />
+                  </svg>
+                </span>
+              </h2>
               <p className={styles.children}>{t("title3")}</p>
-              <a href="#" className={`buttonlast ${styles.children}`}>
-                Visit Website
+              <Link
+                href="/services/#maskUII"
+                className={`buttonlast ${styles.children}`}
+              >
+                {t("view_more")}
                 <div className="iconlast">
                   <MdArrowOutward />
                 </div>
-              </a>
+              </Link>
+              <div className="heroblur ucuncuolanblur">
+                <span></span>
+              </div>
             </motion.div>
             {/* <Link href={"#graphic_design"}>
               <button className="buttonda">

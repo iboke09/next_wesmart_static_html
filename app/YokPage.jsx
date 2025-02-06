@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "@/i18n/routing";
+import { Link } from "../i18n/routing";
 import NotFound from "./[locale]/_component/Images_component/Not-found/NotFound";
 const YokPage = () => {
   return (

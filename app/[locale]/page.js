@@ -12,9 +12,7 @@ import {setRequestLocale} from 'next-intl/server';
 import LastProject from "./_component/LastProject/LastProject";
 import Parallex from './_component/Parallex/Parallex'
 import CompareDemo from "./_component/CompareDemo/CompareDemo";
-export const metadata = {
-  title: "Home",
-};
+import GridGlobe from "./_component/GridGlobe/GridGlobe";
 
 export default function Home({params}) {
   const locale = params?.locale || "en";
@@ -35,6 +33,7 @@ export default function Home({params}) {
       <LastProject/>
       <Parallex/>
       <CompareDemo/>
+      {/* <GridGlobe/> */}
       <Spliden />
       <Footer />
       {/* <Tacarob/> */}

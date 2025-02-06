@@ -39,11 +39,12 @@ const Spliden = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            height: "100vh",
+            height: "100%",
+            minHeight:"100%",
           }}
         >
           <h1>{t("experience")}</h1>
-          <h2>our major causes</h2>
+          <h2>{t('spliden_head')}</h2>
           <div className="cards" style={{ zIndex: "40" }}>
             <Splide
               aria-label="Testimonials"

@@ -4,18 +4,18 @@ import { Raleway } from "next/font/google";
 // import { Gabarito } from "next/font/google";
 import Navbar from "./_component/Navbar/Navbar";
 import { Lato } from "next/font/google";
+import { Roboto } from "next/font/google";
 // import { NextIntlProvider } from 'next-intl';
 import { useLocale } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { routing } from "@/i18n/routing";
+import { routing } from "../../i18n/routing";
 import { setRequestLocale } from "next-intl/server";
-import { Link } from "@/i18n/routing";
+// import { Link } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import translations from "./translate.json";
 import YokPage from "../YokPage";
-import SmoothScroll from "./_component/ScrollAnimation/ScrollAnimation";
-import {ReactLenis} from '@/utils/lenis'
+import ScrollHandle from "./_component/ScrollHandle/ScrollHandle";
 // export async function generateStaticParams() {
 //   return [{ locale: "en" }, { locale: "ar" }];
 // }
@@ -29,7 +29,7 @@ export function generateStaticParams() {
 }
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["300", "400", "600", "700"],
   display: "swap",
   variable: "--inter-font",
 });
@@ -45,6 +45,13 @@ const lato = Lato({
   weight: ["100", "300", "900"],
   display: "swap",
   variable: "--lato-font",
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "900"],
+  display: "swap",
+  variable: "--roboto-font",
 });
 // export const metadata = {
 //   title: {
@@ -109,6 +116,7 @@ export async function generateMetadata({ params }) {
   const t = translations[locale]?.metadata || translations.en.metadata;
 
   return {
+    metadataBase: new URL("https://wesmartt.com"),
     title: t.title,
     description: t.description,
     openGraph: {
@@ -161,7 +169,7 @@ export async function generateMetadata({ params }) {
 export default async function RootLayout({ children, params }) {
   const { locale } = params;
 
-  if (!["en", "tr"].includes(locale)) {
+  if (!["en", "tr", "ar"].includes(locale)) {
     return <YokPage />;
   }
   setRequestLocale(locale);
@@ -179,19 +187,26 @@ export default async function RootLayout({ children, params }) {
         <link rel="prefetch" href="/tr/services" />
         <link rel="prefetch" href="/tr/contact" />
         <link rel="prefetch" href="/tr/" />
+        <link rel="alternate" hrefLang="en" href="https://wesmartt.com/en/" />
+        <link rel="alternate" hrefLang="tr" href="https://wesmartt.com/tr/" />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href="https://wesmartt.com/"
+        />
       </head>
-      <ReactLenis root>
-      <body
-        className={`${lato.variable} ${raleway.variable} ${inter.variable}`}
-      >
-        <NextIntlClientProvider messages={messages}>
-          <Navbar />
-          {/* <SmoothScroll> */}
+      <ScrollHandle>
+        <body
+          className={`${lato.variable} ${raleway.variable} ${inter.variable} ${roboto.variable}`}
+        >
+          <NextIntlClientProvider messages={messages}>
+            <Navbar />
+            {/* <SmoothScroll> */}
             {children}
             {/* </SmoothScroll> */}
-        </NextIntlClientProvider>
-      </body>
-      </ReactLenis>
+          </NextIntlClientProvider>
+        </body>
+      </ScrollHandle>
     </html>
   );
 }

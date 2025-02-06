@@ -4,8 +4,9 @@ import React, { useEffect } from "react";
 import KeenSlider from "keen-slider";
 import "keen-slider/keen-slider.min.css";
 import Footer from "../Footer/Footer";
-
+import { useTranslations } from "next-intl";
 const Tagarob1 = () => {
+  const t = useTranslations("HomePage");
   useEffect(() => {
     const keenSlider = new KeenSlider("#keen-slider", {
       loop: true,
@@ -51,18 +52,28 @@ const Tagarob1 = () => {
   return (
     <>
       <div className="yobba">
-        <section className="" style={{backgroundColor:'var(--main-alt-color12)',transition:'0.7s'}}>
+        <section
+          className=""
+          style={{
+            backgroundColor: "var(--main-alt-color12)",
+            transition: "0.7s",
+          }}
+        >
           <div className="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
               <div className="max-w-xl ltr:sm:text-left rtl:sm:text-right">
-                <h2 className="text-3xl font-bold tracking-tight  sm:text-4xl" style={{color:'var(--blawh-color)',transition:'0.7s'}}> 
+                <h2
+                  className="text-3xl font-bold tracking-tight  sm:text-4xl"
+                  style={{ color: "var(--blawh-color)", transition: "0.7s" }}
+                >
                   Read trusted reviews from our customers
                 </h2>
 
-                <p className="mt-4" style={{color:'var(--blawh-color)',transition:'0.7s'}}>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Voluptas veritatis illo placeat harum porro optio fugit a
-                  culpa sunt id!
+                <p
+                  className="mt-4"
+                  style={{ color: "var(--blawh-color)", transition: "0.7s" }}
+                >
+                  {t("tagarob1")}
                 </p>
 
                 <div className="hidden lg:mt-8 lg:flex lg:gap-4">
@@ -172,21 +183,17 @@ const Tagarob1 = () => {
 
                         <div className="mt-4">
                           <p className="text-2xl font-bold  sm:text-3xl denel">
-                            Omar Shwehneh
+                            James Smith
                           </p>
 
                           <p className="mt-4 leading-relaxed text-gray-700">
-                            No, Rose, they are not breathing. And they have no
-                            arms or legs … Where are they? You know what? If we
-                            come across somebody with no arms or legs, do we
-                            bother resuscitating them? I mean, what quality of
-                            life do we have there?
+                            {t("tagarob2")}
                           </p>
                         </div>
                       </div>
 
                       <h3 className="mt-4 text-sm font-medium text-gray-700 sm:mt-6 bg-transparent">
-                        &mdash; Michael Scott
+                        &mdash; James Smith
                       </h3>
                     </blockquote>
                   </div>
@@ -243,21 +250,17 @@ const Tagarob1 = () => {
 
                         <div className="mt-4">
                           <p className="text-2xl font-bold sm:text-3xl denel">
-                            Ibrahim Sh
+                            William Johnson
                           </p>
 
                           <p className="mt-4 leading-relaxed text-gray-700">
-                            No, Rose, they are not breathing. And they have no
-                            arms or legs … Where are they? You know what? If we
-                            come across somebody with no arms or legs, do we
-                            bother resuscitating them? I mean, what quality of
-                            life do we have there?
+                          {t("tagarob3")}
                           </p>
                         </div>
                       </div>
 
                       <h3 className="mt-4 text-sm font-medium text-gray-700 sm:mt-6 bg-transparent">
-                        &mdash; Michael Scott
+                        &mdash; William Johnson
                       </h3>
                     </blockquote>
                   </div>
@@ -314,21 +317,17 @@ const Tagarob1 = () => {
 
                         <div className="mt-4">
                           <p className="text-2xl font-bold text-rose-600 sm:text-3xl denel">
-                            Abdullah sh
+                            Michael Brown
                           </p>
 
                           <p className="mt-4 leading-relaxed text-gray-700">
-                            No, Rose, they are not breathing. And they have no
-                            arms or legs … Where are they? You know what? If we
-                            come across somebody with no arms or legs, do we
-                            bother resuscitating them? I mean, what quality of
-                            life do we have there?
+                          {t("tagarob4")}
                           </p>
                         </div>
                       </div>
 
                       <h3 className="mt-4 text-sm font-medium text-gray-700 sm:mt-6 bg-transparent">
-                        &mdash; Michael Scott
+                        &mdash; Michael Brown
                       </h3>
                     </blockquote>
                   </div>
@@ -342,9 +341,9 @@ const Tagarob1 = () => {
                 id="keen-slider-previous"
                 className="rounded-full border p-4  transition hover:text-white ilk"
                 style={{
-                    borderColor: "rgb(8 155 223)",
-                    color: "rgb(8 155 223)",
-                  }}
+                  borderColor: "rgb(8 155 223)",
+                  color: "rgb(8 155 223)",
+                }}
               >
                 <svg
                   className="size-5 -rotate-180 transform"
@@ -367,9 +366,9 @@ const Tagarob1 = () => {
                 id="keen-slider-next"
                 className="rounded-full border p-4  transition hover:text-white ilk"
                 style={{
-                    borderColor: "rgb(8 155 223)",
-                    color: "rgb(8 155 223)",
-                  }}
+                  borderColor: "rgb(8 155 223)",
+                  color: "rgb(8 155 223)",
+                }}
               >
                 <svg
                   className="h-5 w-5"

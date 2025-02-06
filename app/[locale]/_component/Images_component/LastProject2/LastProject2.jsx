@@ -5,7 +5,7 @@ import React from 'react'
 const LastProject2 = () => {
   return (
     <CldImage
-    src={"zvzfahsw70bcqnk8rv48.png"}
+    src={"wmcggscgb3u6stcs5i1u.png"}
     alt="Web Development in wesmart"
     width={1200}
     height={1200}

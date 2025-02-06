@@ -1,6 +1,6 @@
 import React from "react";
 // import Spline from "@splinetool/react-spline";
-import {Link} from '@/i18n/routing';
+import {Link} from '../../../../i18n/routing';
 import TheFinalOfDesigns from "../Images_component/TheFinalOfDesigns/TheFinalOfDesigns";
 import { useTranslations } from "next-intl";
 const Footer = () => {

@@ -31,6 +31,9 @@ const nextConfig = {
     loader: "custom",
     loaderFile: "./my-loader.js",
   },
+  // env: {
+  //   _next_intl_trailing_slash: 'true', // أو 'false' حسب تفضيلاتك
+  // },
 };
 
 export default withNextIntl(nextConfig);

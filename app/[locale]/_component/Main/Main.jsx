@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import {Link} from '@/i18n/routing';
+import {Link} from '../../../../i18n/routing';
 // import Image from "next/image";
 import { CldImage } from "next-cloudinary";
 import { useTranslations } from 'next-intl';

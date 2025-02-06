@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import Navbar from "../_component/Navbar/Navbar";
-import {Link} from '@/i18n/routing';
+import {Link} from '../../../i18n/routing';
 import Loading from "../loading";
 import SalesImg from "../_component/Images_component/SalesImg/SalesImg";
 import { useTranslations } from "next-intl";

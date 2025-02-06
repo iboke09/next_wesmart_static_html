@@ -3,7 +3,10 @@ import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 import LastProject2 from '../Images_component/LastProject2/LastProject2'
 import LastProject1 from '../Images_component/LastProject1/LastProject1'
+import { useTranslations } from "next-intl";
+import { Link } from "../../../../i18n/routing";
 const LastProject = () => {
+   const t = useTranslations('HomePage');
   return (
     <>
       <div
@@ -18,24 +21,21 @@ const LastProject = () => {
         }}
       >
         <div className="container last">
-          <h1>our Last Project</h1>
-          <h2>Web Software Project</h2>
+          <h1>{t('our_last')}</h1>
+          <h2>{t('our_last1')}</h2>
           <div className="mask-last">
             <div className="textli">
-              <h3>UI/UX Design</h3>
-              <h3>Web Development</h3>
-              <p>
-                Wesmart undertook the comprehensive UI/UX redesign and
-                development of SaadPlast’s website. The project focused on
-                creating an intuitive and engaging user experience, showcasing
-                Saad Plast’s prestigious heritage and innovative approach.
+              <h3>{t('experience_title3')}</h3>
+              <h3>{t('sap_s')}</h3>
+              <p >
+                {t('our_last2')}
               </p>
-              <a href="#" className="buttonlast">
-                Visit Website
+              <Link href="https://www.saadplast.com/en/index.html" target="_blank" className="buttonlast">
+                {t('our_last3')}
                 <div className="iconlast">
                   <MdArrowOutward />
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
             <div className="fotolu">

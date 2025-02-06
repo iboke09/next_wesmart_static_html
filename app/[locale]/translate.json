@@ -32,6 +32,23 @@
         "about_title_meta":"Hakkımızda - Teknoloji İçin Wesmart",
         "about":"Hikayemizi, misyonumuzu ve uzmanlığımızı keşfedin. SAP, ERP sistemleri, UI/UX tasarımı ve web geliştirme alanlarında yenilikçi çözümler sunuyoruz."
       }
+    },
+    "ar": {
+      "metadata": {
+        "title": "asdfgs dasd asfas",
+        "description": "Yenilikçi SAP çözümleri, hızlı performanslı en iyi web sitesi ve mağaza tasarımları ile mükemmel kullanıcı deneyimi hizmetleri sunuyoruz.",
+        "keywords": "Sap Danışmanı, SEO, Web Geliştirme, UI/UX tasarımı, Tüm web hizmetleri, erp, web siteleri, grafik tasarımı, Yenilikçi SAP çözümleri, hızlı performanslı en iyi web sitesi ve mağaza tasarımları ile mükemmel kullanıcı deneyimi hizmetleri sunuyoruz.",
+        "ogAlt": "SAP ve tüm web geliştirme hizmetleri",
+        "siteName": "Wesmart Şirket Sitesi"
+      },
+      "ServicesPage":{
+        "services_title_meta":"Hizmetlerimiz - Teknoloji İçin Wesmart",
+        "about":"ERP, SAP, UI/UX tasarımı ve web geliştirme hizmetleri sunuyoruz. Yenilikçi ve verimli çözümlerle iş ihtiyaçlarınızı karşılıyor ve en iyi sonuçları sağlıyoruz."
+      },
+      "AboutPage":{
+        "about_title_meta":"Hakkımızda - Teknoloji İçin Wesmart",
+        "about":"Hikayemizi, misyonumuzu ve uzmanlığımızı keşfedin. SAP, ERP sistemleri, UI/UX tasarımı ve web geliştirme alanlarında yenilikçi çözümler sunuyoruz."
+      }
     }
   }
   
